@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import Map from './Map';
-import './App.css';
+
+import Header from './components/Header'
+import MapContainer from './components/Map'
+import FloatButton from './components/FloatButton'
+
+import GlobalStyle from './styles/global'
+
 
 class App extends Component{
 	render() {
 		return (
-		<div>
-			<Map />
-			<h2>
-				Hi, moon .
-			</h2>
-		</div>
+			<>
+				<Header />
+				<MapContainer />
+				{/* <FloatButton /> */}
+				<GlobalStyle />
+			</>
+
 		);
 	}
 }
