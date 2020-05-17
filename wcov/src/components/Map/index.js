@@ -1,8 +1,7 @@
 import React from 'react'
 import { Map, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-
-import {Container} from './style'
+import './style.css'
 
 const position = [-15.8276, -47.9218]
 
@@ -13,14 +12,14 @@ const mapSize = {
 
 function MapContainer(){
   return (
-    <Container>
+      <div>
       <Map center={position} zoom={11} style={mapSize} >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           />
       </Map>
-    </Container>
+      </div>
   )
 
 }
