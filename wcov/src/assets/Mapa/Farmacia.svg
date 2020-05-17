@@ -1,0 +1,49 @@
+<svg id="Farmacia" xmlns="http://www.w3.org/2000/svg" width="722.187" height="662.25" viewBox="0 0 722.187 662.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0.5;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #b71c1c;
+      }
+
+      .cls-3 {
+        fill: #ffeb3b;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Medicamento_2" data-name="Medicamento 2">
+    <g id="Medicamento_2_sombra" data-name="Medicamento 2 sombra">
+      <path id="Vermelho" class="cls-1" d="M741.627,742.216L410.519,422.893C530.9,298.067,702.612,268.359,794.045,356.537S862.01,617.39,741.627,742.216h0Z" transform="translate(-127.594 -197.063)"/>
+      <path id="Amarelo" class="cls-1" d="M410.519,422.893L741.627,742.216C621.244,867.042,449.533,896.751,358.1,808.572s-67.964-260.853,52.419-385.679h0Z" transform="translate(-127.594 -197.063)"/>
+    </g>
+    <path id="Vermelho-2" data-name="Vermelho" class="cls-2" d="M720.1,742.216L388.987,422.893C509.37,298.067,681.081,268.359,772.514,356.537S840.479,617.39,720.1,742.216h0Z" transform="translate(-127.594 -197.063)"/>
+    <path id="Amarelo-2" data-name="Amarelo" class="cls-3" d="M388.987,422.893L720.1,742.216C599.713,867.042,428,896.751,336.569,808.572S268.6,547.719,388.987,422.893h0Z" transform="translate(-127.594 -197.063)"/>
+    <g id="Brilhos">
+      <path id="Retângulo_1_copiar_2" data-name="Retângulo 1 copiar 2" class="cls-4" d="M672.694,697.22l27.23,26.261C586.069,841.332,423.829,869.333,337.409,785.989a161.794,161.794,0,0,1-11.89-12.786C414.864,839.859,565.348,808.528,672.694,697.22Z" transform="translate(-127.594 -197.063)"/>
+      <path id="Retângulo_1_copiar_3" data-name="Retângulo 1 copiar 3" class="cls-4" d="M675.208,693.891C780.415,580.568,803.4,428.605,731.937,343.1a161.583,161.583,0,0,1,13.42,11.162c87.965,81.665,68.949,245.181-42.432,365.364Z" transform="translate(-127.594 -197.063)"/>
+    </g>
+  </g>
+  <g id="Medicamento_1" data-name="Medicamento 1">
+    <g id="Medicamento_1_sombra" data-name="Medicamento 1 sombra">
+      <path id="Vermelho-3" data-name="Vermelho" class="cls-1" d="M138.021,508.852c1.648-173.409,105.954-313.007,232.973-311.8S599.648,339.813,598,513.223Z" transform="translate(-127.594 -197.063)"/>
+      <path id="Amarelo-3" data-name="Amarelo" class="cls-1" d="M598,513.223c-1.647,173.409-105.953,313.007-232.973,311.8S136.374,682.262,138.021,508.852Z" transform="translate(-127.594 -197.063)"/>
+    </g>
+    <path id="Vermelho-4" data-name="Vermelho" class="cls-2" d="M127.584,508.852c1.648-173.409,105.953-313.007,232.973-311.8S589.211,339.813,587.563,513.223Z" transform="translate(-127.594 -197.063)"/>
+    <path id="Amarelo-4" data-name="Amarelo" class="cls-3" d="M587.563,513.223C585.915,686.632,481.61,826.23,354.59,825.023S125.936,682.262,127.584,508.852Z" transform="translate(-127.594 -197.063)"/>
+    <g id="Brilhos-2" data-name="Brilhos">
+      <path id="Retângulo_1_copiar_2-2" data-name="Retângulo 1 copiar 2" class="cls-4" d="M522.206,513.119h0l37.828,0.36c-1.7,163.856-100.3,295.7-220.356,294.563a161.769,161.769,0,0,1-17.424-1.115C432.964,793.935,520.736,667.75,522.206,513.119Z" transform="translate(-127.594 -197.063)"/>
+      <path id="Retângulo_1_copiar_3-2" data-name="Retângulo 1 copiar 3" class="cls-4" d="M521.744,508.973c-1.469-154.624-89.218-280.8-199.9-293.795a161.968,161.968,0,0,1,17.42-1.116c120.024-1.141,218.6,130.7,220.3,294.552Z" transform="translate(-127.594 -197.063)"/>
+    </g>
+  </g>
+</svg>

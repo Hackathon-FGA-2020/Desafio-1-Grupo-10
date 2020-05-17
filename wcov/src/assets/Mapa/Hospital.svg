@@ -1,0 +1,177 @@
+<svg id="Hospital" xmlns="http://www.w3.org/2000/svg" width="969" height="740" viewBox="0 0 969 740">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c1bb9b;
+      }
+
+      .cls-2 {
+        fill: #91a5f9;
+      }
+
+      .cls-11, .cls-2, .cls-3, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #647ff1;
+      }
+
+      .cls-4 {
+        fill: #f0f4c3;
+      }
+
+      .cls-5, .cls-8 {
+        fill: #514e4e;
+      }
+
+      .cls-6, .cls-9 {
+        fill: #b9f1fd;
+      }
+
+      .cls-7 {
+        fill: #98eafc;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-11 {
+        fill: #f44141;
+      }
+    </style>
+  </defs>
+  <g id="Hospital-2" data-name="Hospital">
+    <rect id="Retângulo_1_copiar" data-name="Retângulo 1 copiar" class="cls-1" x="28" y="218" width="912" height="517"/>
+    <g id="ROdateto_Menor" data-name="ROdateto Menor">
+      <path id="Forma_2" data-name="Forma 2" class="cls-2" d="M983.452,355.84c0,2.531-50.79,4.6-112.87,4.6H128.87c-62.08,0-112.87-2.071-112.87-4.6V325.6c0-2.531,50.79-4.6,112.87-4.6H870.582c62.08,0,112.87,2.071,112.87,4.6V355.84Z" transform="translate(-16 -119)"/>
+      <path id="Forma_2_copiar" data-name="Forma 2 copiar" class="cls-3" d="M985,369.4c0,2.531-50.79,4.6-112.87,4.6H130.418c-62.08,0-112.87-2.071-112.87-4.6V339.16c0-2.531,50.79-4.6,112.87-4.6H872.13c62.08,0,112.87,2.071,112.87,4.6V369.4Z" transform="translate(-16 -119)"/>
+    </g>
+    <rect id="Retângulo_1" data-name="Retângulo 1" class="cls-4" x="195" y="65" width="578" height="675"/>
+  </g>
+  <g id="Porta1">
+    <path id="Borda" class="cls-5" d="M399.958,701.384H598.894v157.6H399.958v-157.6ZM396,696H604V858.979H396V696Z" transform="translate(-16 -119)"/>
+    <path id="Vidro" class="cls-6" d="M399.958,701.384H598.894v157.6H399.958v-157.6Z" transform="translate(-16 -119)"/>
+    <path id="Retângulo_2_copiar" data-name="Retângulo 2 copiar" class="cls-7" d="M499,858.978l-98.792.015-0.206-157h0.455Z" transform="translate(-16 -119)"/>
+    <path id="Retângulo_2_copiar_3" data-name="Retângulo 2 copiar 3" class="cls-7" d="M599,858.978l-99.79.015-0.208-157h0.46Z" transform="translate(-16 -119)"/>
+  </g>
+  <g id="Janelas">
+    <g id="Agrupar_2" data-name="Agrupar 2">
+      <g id="Agrupar_1" data-name="Agrupar 1">
+        <g id="Janela">
+          <path id="Retângulo_2_copiar_2" data-name="Retângulo 2 copiar 2" class="cls-5" d="M237.25,314.446h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2" data-name="Retângulo 2" class="cls-6" d="M242.906,320.009h97.313v92.5H242.906v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-2" data-name="Retângulo 2 copiar" class="cls-7" d="M339.588,412.5l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar" data-name="Janela copiar">
+          <rect id="Retângulo_2_copiar_2-2" data-name="Retângulo 2 copiar 2" class="cls-8" x="221.563" y="428.406" width="108" height="103"/>
+          <path id="Retângulo_2-2" data-name="Retângulo 2" class="cls-6" d="M243.219,552.977h97.312v92.5H243.219v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-3" data-name="Retângulo 2 copiar" class="cls-7" d="M339.906,645.45l-96.5.01-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3" data-name="Janela copiar 3">
+          <path id="Retângulo_2_copiar_2-3" data-name="Retângulo 2 copiar 2" class="cls-5" d="M237.25,430.915h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-3" data-name="Retângulo 2" class="cls-6" d="M242.906,436.477h97.313v92.5H242.906v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-4" data-name="Retângulo 2 copiar" class="cls-7" d="M339.6,528.973l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+      <g id="Agrupar_1_copiar" data-name="Agrupar 1 copiar">
+        <g id="Janela-2" data-name="Janela">
+          <path id="Retângulo_2_copiar_2-4" data-name="Retângulo 2 copiar 2" class="cls-5" d="M357.094,315.071h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <rect id="Retângulo_2-4" data-name="Retângulo 2" class="cls-9" x="346.75" y="201.625" width="97.313" height="92.5"/>
+          <path id="Retângulo_2_copiar-5" data-name="Retângulo 2 copiar" class="cls-7" d="M459.439,413.121l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar-2" data-name="Janela copiar">
+          <path id="Retângulo_2_copiar_2-5" data-name="Retângulo 2 copiar 2" class="cls-5" d="M357.406,548.04h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-5" data-name="Retângulo 2" class="cls-6" d="M363.063,553.6h97.312v92.5H363.063V553.6Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-6" data-name="Retângulo 2 copiar" class="cls-7" d="M459.758,646.075l-96.5.01-0.2-92.516H363.5Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3-2" data-name="Janela copiar 3">
+          <path id="Retângulo_2_copiar_2-6" data-name="Retângulo 2 copiar 2" class="cls-5" d="M357.094,431.54h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-6" data-name="Retângulo 2" class="cls-6" d="M362.75,437.1h97.313v92.5H362.75V437.1Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-7" data-name="Retângulo 2 copiar" class="cls-7" d="M459.45,529.6l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Agrupar_2_copiar" data-name="Agrupar 2 copiar">
+      <g id="Agrupar_1-2" data-name="Agrupar 1">
+        <g id="Janela-3" data-name="Janela">
+          <rect id="Retângulo_2_copiar_2-7" data-name="Retângulo 2 copiar 2" class="cls-8" x="516.594" y="193.875" width="108" height="103"/>
+          <path id="Retângulo_2-7" data-name="Retângulo 2" class="cls-6" d="M538.25,318.446h97.313v92.5H538.25v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-8" data-name="Retângulo 2 copiar" class="cls-7" d="M634.939,410.949l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar-3" data-name="Janela copiar">
+          <path id="Retângulo_2_copiar_2-8" data-name="Retângulo 2 copiar 2" class="cls-5" d="M532.906,545.852h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <rect id="Retângulo_2-8" data-name="Retângulo 2" class="cls-9" x="522.563" y="432.406" width="97.312" height="92.5"/>
+          <path id="Retângulo_2_copiar-9" data-name="Retângulo 2 copiar" class="cls-7" d="M635.258,643.9l-96.5.01-0.2-92.516H539Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3-3" data-name="Janela copiar 3">
+          <path id="Retângulo_2_copiar_2-9" data-name="Retângulo 2 copiar 2" class="cls-5" d="M532.594,429.352h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-9" data-name="Retângulo 2" class="cls-6" d="M538.25,434.915h97.313v92.5H538.25v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-10" data-name="Retângulo 2 copiar" class="cls-7" d="M634.95,527.426l-96.5.009-0.2-92.515h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+      <g id="Agrupar_1_copiar-2" data-name="Agrupar 1 copiar">
+        <g id="Janela-4" data-name="Janela">
+          <path id="Retângulo_2_copiar_2-10" data-name="Retângulo 2 copiar 2" class="cls-5" d="M652.438,313.509h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-10" data-name="Retângulo 2" class="cls-6" d="M658.094,319.071h97.312v92.5H658.094v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-11" data-name="Retângulo 2 copiar" class="cls-7" d="M754.791,411.574l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar-4" data-name="Janela copiar">
+          <path id="Retângulo_2_copiar_2-11" data-name="Retângulo 2 copiar 2" class="cls-5" d="M652.75,546.477h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-11" data-name="Retângulo 2" class="cls-6" d="M658.406,552.04h97.313v92.5H658.406v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-12" data-name="Retângulo 2 copiar" class="cls-7" d="M755.109,644.528l-96.5.01-0.2-92.516h0.444Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3-4" data-name="Janela copiar 3">
+          <path id="Retângulo_2_copiar_2-12" data-name="Retângulo 2 copiar 2" class="cls-5" d="M652.438,429.977h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-12" data-name="Retângulo 2" class="cls-6" d="M658.094,435.54h97.312v92.5H658.094v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-13" data-name="Retângulo 2 copiar" class="cls-7" d="M754.8,528.051l-96.5.009-0.2-92.515h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Janelaslado_de_fora" data-name="Janelaslado de fora">
+      <g id="Agrupar_1_copiar-3" data-name="Agrupar 1 copiar">
+        <g id="Janela-5" data-name="Janela">
+          <rect id="Retângulo_2_copiar_2-13" data-name="Retângulo 2 copiar 2" class="cls-8" x="810.281" y="299.688" width="108" height="103"/>
+          <rect id="Retângulo_2-13" data-name="Retângulo 2" class="cls-9" x="815.938" y="305.25" width="97.312" height="92.5"/>
+          <path id="Retângulo_2_copiar-14" data-name="Retângulo 2 copiar" class="cls-7" d="M928.635,516.761l-96.5.01-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar-5" data-name="Janela copiar">
+          <rect id="Retângulo_2_copiar_2-14" data-name="Retângulo 2 copiar 2" class="cls-8" x="810.594" y="532.656" width="108" height="103"/>
+          <rect id="Retângulo_2-14" data-name="Retângulo 2" class="cls-9" x="816.25" y="538.219" width="97.313" height="92.5"/>
+          <path id="Retângulo_2_copiar-15" data-name="Retângulo 2 copiar" class="cls-7" d="M928.953,749.716l-96.5.009-0.2-92.516H832.7Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3-5" data-name="Janela copiar 3">
+          <rect id="Retângulo_2_copiar_2-15" data-name="Retângulo 2 copiar 2" class="cls-8" x="810.281" y="416.156" width="108" height="103"/>
+          <rect id="Retângulo_2-15" data-name="Retângulo 2" class="cls-9" x="815.938" y="421.719" width="97.312" height="92.5"/>
+          <path id="Retângulo_2_copiar-16" data-name="Retângulo 2 copiar" class="cls-7" d="M928.645,633.239l-96.5.009-0.2-92.516h0.444Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+      <g id="Agrupar_1_copiar_2" data-name="Agrupar 1 copiar 2">
+        <g id="Janela-6" data-name="Janela">
+          <path id="Retângulo_2_copiar_2-16" data-name="Retângulo 2 copiar 2" class="cls-5" d="M73.428,419.119h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-16" data-name="Retângulo 2" class="cls-6" d="M79.084,424.682H176.4v92.5H79.084v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-17" data-name="Retângulo 2 copiar" class="cls-7" d="M175.794,517.185l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar-6" data-name="Janela copiar">
+          <path id="Retângulo_2_copiar_2-17" data-name="Retângulo 2 copiar 2" class="cls-5" d="M73.741,652.088h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-17" data-name="Retângulo 2" class="cls-6" d="M79.4,657.651h97.312v92.5H79.4v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-18" data-name="Retângulo 2 copiar" class="cls-7" d="M176.112,750.139l-96.5.009-0.2-92.515h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+        <g id="Janela_copiar_3-6" data-name="Janela copiar 3">
+          <path id="Retângulo_2_copiar_2-18" data-name="Retângulo 2 copiar 2" class="cls-5" d="M73.428,535.588h108v103h-108v-103Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2-18" data-name="Retângulo 2" class="cls-6" d="M79.084,541.151H176.4v92.5H79.084v-92.5Z" transform="translate(-16 -119)"/>
+          <path id="Retângulo_2_copiar-19" data-name="Retângulo 2 copiar" class="cls-7" d="M175.8,633.662l-96.5.009-0.2-92.516h0.445Z" transform="translate(-16 -119)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="ROdateto">
+    <path id="Forma_2-2" data-name="Forma 2" class="cls-2" d="M812,230.533c0,4.107-32.812,7.467-72.917,7.467H259.917c-40.1,0-72.917-3.36-72.917-7.467V181.467c0-4.107,32.812-7.467,72.917-7.467H739.083c40.105,0,72.917,3.36,72.917,7.467v49.066Z" transform="translate(-16 -119)"/>
+    <path id="Forma_2_copiar-2" data-name="Forma 2 copiar" class="cls-3" d="M813,252.533c0,4.107-32.812,7.467-72.917,7.467H260.917c-40.1,0-72.917-3.36-72.917-7.467V203.467c0-4.107,32.812-7.467,72.917-7.467H740.083c40.105,0,72.917,3.36,72.917,7.467v49.066Z" transform="translate(-16 -119)"/>
+  </g>
+  <g id="Cruz">
+    <ellipse id="Elipse_1" data-name="Elipse 1" class="cls-10" cx="484" cy="86.5" rx="89" ry="86.5"/>
+    <path id="Forma_1" data-name="Forma 1" class="cls-11" d="M500.5,296.012a88.512,88.512,0,1,1,88.49-88.512A88.6,88.6,0,0,1,500.5,296.012Zm0-168.9A80.393,80.393,0,1,0,580.869,207.5,80.468,80.468,0,0,0,500.5,127.108Zm10.812,128.928H489.683v-37.72H451.976V196.685h37.707V158.964h21.624v37.721H549v21.631h-37.7v37.72Z" transform="translate(-16 -119)"/>
+  </g>
+</svg>

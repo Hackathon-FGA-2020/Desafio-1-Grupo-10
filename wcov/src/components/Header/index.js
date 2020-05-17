@@ -99,7 +99,7 @@ export default function Header({children}) {
         })}
       >
         <div className={classes.drawerHeader} />
-        {children}
+        
       </main>
 
     </div>

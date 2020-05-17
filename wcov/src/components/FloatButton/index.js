@@ -1,56 +1,65 @@
 import React from 'react'
-import { Fab} from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles';
-import AddIcon from '@material-ui/icons/Add'
+import Button from '@material-ui/core'
+
+import {SpeedDial, SpeedDialAction, SpeedDialIcon} from '@material-ui/lab'
+
+import { withStyles } from '@material-ui/core/styles'
+
+import EditIcon from '@material-ui/icons/Edit'
 
 import './style.css'
 
 const styles = {
-  root: {
-    height: '70px',
-    width: '70px',
-    backgroundColor: '#E91E63',
-    boxShadow: '#FFFFFF',
-    '&:active': {
+    
+      height: '70px',
+      width: '70px',
+      backgroundColor: '#E91E63',
       boxShadow: '#FFFFFF',
-    },
-    '&:hover': {
-      backgroundColor: '#E57A9E',
-      '@media (hover: none)': {
-        backgroundColor: '#E91E63',
+      '&:active': {
+        boxShadow: '#FFFFFF',
       },
-    },
-    color: '#FFFFFF'
-  },
+      '&:hover': {
+        backgroundColor: '#E57A9E',
+        '@media (hover: none)': {
+          backgroundColor: '#E91E63',
+        },
+      },
+      color: '#FFFFFF'
 };
+
+const options = [
+  { icon: <EditIcon />, name: 'Copy' },
+  { icon: <EditIcon />, name: 'Save' },
+];
 
 function FloatButton(props){
   const { classes } = props;
-  const [anchorOpt, setAnchorOpt] = React.useState(null);
+  const [openOp, setOpenOp] = React.useState(false);
+  //const [hidden, setHidden] = React.useState(false);
 
-  const handleOptions = (event) => {
-    setAnchorOpt(event.currentTarget);
-  };
-
-  const closeOptions = () => {
-    setAnchorOpt(null);
+  const handleOptions = () => {
+    setOpenOp(!openOp);
   };
 
   return (
     <div className="floatButtonContainer" >
-	  <div className="miniFloatContainer" style={{bottom: "20px"}}>
-	    <Fab classes={{root: classes.root}} style={{width: "60px", height: "60px"}}>
-	    </Fab>
-	  </div>
-	  <div className="miniFloatContainer" >
-	    <Fab classes={{root: classes.root}} style={{width: "60px", height: "60px"}}>
-	    </Fab>
-	  </div>
-	  <div>
-      <Fab aria-label="menu" classes={{root: classes.root}} onClick={handleOptions}>
-       <AddIcon /> 
-      </Fab>
-	  </div>
+	  <SpeedDial
+      ariaLabel="Map Options"
+      FabProps={{style: styles}}
+      icon={<SpeedDialIcon openIcon={<EditIcon />} />}
+      onClick={handleOptions }
+      open={openOp}
+    >
+      {options.map((option) => (
+        <SpeedDialAction
+          key={option.name}
+          icon={option.icon}
+          tooltipTitle={option.name}
+          onClick={handleOptions}
+          FabProps={{style: {height:'50px', width:'50px'}}}
+        />
+      ))}
+    </SpeedDial>  
     </div>
   )
 }
