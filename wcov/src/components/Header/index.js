@@ -41,7 +41,8 @@ export default function Header({children}) {
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
-        })}
+		})}
+		style={{background: "#E91E63"}}
       >
         <Toolbar>
           <IconButton
@@ -59,7 +60,8 @@ export default function Header({children}) {
         </Toolbar>
       </AppBar>
       <Drawer
-        className={classes.drawer}
+		className={classes.drawer}
+		position="absolute"
         variant="persistent"
         anchor="left"
         open={open}

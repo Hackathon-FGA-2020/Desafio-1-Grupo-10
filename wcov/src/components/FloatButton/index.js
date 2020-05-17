@@ -26,11 +26,31 @@ const styles = {
 
 function FloatButton(props){
   const { classes } = props;
+  const [anchorOpt, setAnchorOpt] = React.useState(null);
+
+  const handleOptions = (event) => {
+    setAnchorOpt(event.currentTarget);
+  };
+
+  const closeOptions = () => {
+    setAnchorOpt(null);
+  };
+
   return (
     <div className="floatButtonContainer" >
-      <Fab aria-label="menu" classes={{root: classes.root}}>
-        <AddIcon /> 
+	  <div className="miniFloatContainer" style={{bottom: "20px"}}>
+	    <Fab classes={{root: classes.root}} style={{width: "60px", height: "60px"}}>
+	    </Fab>
+	  </div>
+	  <div className="miniFloatContainer" >
+	    <Fab classes={{root: classes.root}} style={{width: "60px", height: "60px"}}>
+	    </Fab>
+	  </div>
+	  <div>
+      <Fab aria-label="menu" classes={{root: classes.root}} onClick={handleOptions}>
+       <AddIcon /> 
       </Fab>
+	  </div>
     </div>
   )
 }

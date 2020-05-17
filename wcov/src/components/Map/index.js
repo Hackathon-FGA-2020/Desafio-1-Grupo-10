@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { calc } from 'react'
 import { Map, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import './style.css'
 
 const position = [-15.8276, -47.9218]
 
+//VV Tegitntando fazer funcinoar : calc(~'100vh - 100px') 
 const mapSize = {
-  height:'100vh',
+  height: "95vh",
   zIndex: 1
 }
 
