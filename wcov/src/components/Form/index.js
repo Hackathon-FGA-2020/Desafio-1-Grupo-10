@@ -1,5 +1,5 @@
 import React from 'react'
-import {Slide, Input} from "@material-ui/core"
+import {Slide} from "@material-ui/core"
 import { Button, Card, CardContent, CardActions } from '@material-ui/core'
 
 import useStyles from './styles'

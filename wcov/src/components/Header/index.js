@@ -23,7 +23,6 @@ import HealingIcon from '@material-ui/icons/Healing';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
 import HomeIcon from '@material-ui/icons/Home';
-import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 
 import {useStyles} from './styles'
 
@@ -94,15 +93,10 @@ export default function Header({children}) {
           </ListItem>
         </Link>
 
-        <ListItem button >
+        <Link className={classes.linkText} to="/mapeamento-de-casos" >
+          <ListItem button >
               <ListItemIcon><MapIcon /></ListItemIcon>
               <ListItemText primary="Mapeamento de casos" />
-        </ListItem>
-
-        <Link className={classes.linkText} to="/numero-de-casos" >
-          <ListItem button >
-              <ListItemIcon><TrendingUpIcon /></ListItemIcon>
-              <ListItemText primary="Número de casos" />
           </ListItem>
         </Link>
 
@@ -113,10 +107,12 @@ export default function Header({children}) {
           </ListItem>
         </Link>
 
-        <ListItem button >
+        <Link className={classes.linkText} to="/atendimentos" >
+          <ListItem button >
               <ListItemIcon><LocalHospitalIcon /></ListItemIcon>
               <ListItemText primary="Atendimentos" />
-        </ListItem>
+          </ListItem>
+        </Link>
 
         <Link className={classes.linkText} to="/ajuda">
           <ListItem button >

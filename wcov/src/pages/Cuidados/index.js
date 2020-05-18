@@ -12,12 +12,37 @@ function Cuidados (){
   return (
   <>
     <Header/>
-      <h1 className="title" > Cuidados </h1>
-      <img className="card_02" src={card_02} alt='Transmissão: Ela costuma ocorrer pelo ar com secreções contaminadas e/ou por contato pessoal,
-      como: beijo, abraço e aperto de mão, contato com objetios e superfícies contaminadas, gotículas de saliva, espirro, catarro, tosse. Atenção!: A transmissão pode ocorrer mesmo
-      se a pessoa não apresentar sintomas, então evite contato próxico.
-      Imagem da secretaria de Saúde, GDF' />
-    
+    <div className="containerCuidados" >
+
+          <div className="containderImg" >
+
+            <img className="img" src={card_02} alt='Transmissão: Ela costuma ocorrer pelo ar com secreções contaminadas e/ou por contato pessoal,
+            como: beijo, abraço e aperto de mão, contato com objetios e superfícies contaminadas, gotículas de saliva, espirro, catarro, tosse. Atenção!: A transmissão pode ocorrer mesmo
+            se a pessoa não apresentar sintomas, então evite contato próxico.
+            Imagem da secretaria de saúde, GDF' />
+
+            <img className="img" src={card_03} alt='Como prevenir? Lave as mãos frequentemente com água e sabão por pelo menos 20 segundos.
+            Use antisséptico de mãos à base de álcool gel 70%. 
+            Cubra o nariz e boca ao espirrar ou tossir. 
+            Mantenha os ambientes bem ventilados e limpos. 
+            Evite apertos de mão, abraços e beijos. 
+            Em eventos abertos recomenda-se a distância mínima de dois metros entre as pessoas. 
+            Fique em casa se estiver doente. 
+            Não compartilhe objetos pessoais. 
+            Evite tocar os olhos, boca ou nariz antes de higienizar as mãos. 
+            Imagem da secretaria de saúde, GDF' />
+
+            <img className="img " src={card_04} alt='texto 04' />
+
+            <img className="img" src={card_05} alt='texto 05' />
+          </div>
+          
+          <div>
+            <img className="img_6" src={card_06} alt='texto 06' />
+          </div>
+
+        </div>
+        
   </>
   )
 }
