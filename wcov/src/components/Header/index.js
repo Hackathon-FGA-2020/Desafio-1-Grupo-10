@@ -38,6 +38,8 @@ export default function Header({children}) {
     setOpen(false);
   };
 
+  const url = 'http://www.saude.df.gov.br/coronavirus/';
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -104,6 +106,12 @@ export default function Header({children}) {
         </List>
         <Divider />
         <List>
+
+        <ListItem button onClick = {() => window.open(url)}>
+            <ListItemIcon><InfoIcon /></ListItemIcon>
+            <ListItemText primary="Mais informações" />
+      
+          </ListItem>
 
           <ListItem button >
             <ListItemIcon><InfoIcon /></ListItemIcon>
