@@ -21,6 +21,7 @@ function MapContainer(){
 
 
 	const addmarker = (e) => {
+<<<<<<< HEAD
     const newmarkers = markers
     const {lat, lng} = e.latlng
     
@@ -28,6 +29,13 @@ function MapContainer(){
     newmarkers.push(newPos)
     console.log(newmarkers)
 		setMarkers([...markers, newPos])
+=======
+		const umarkers = markers
+		const{lat, lng} = e.latlng
+		const newPos = [[lat, lng]]
+		umarkers.push(newPos)
+		setMarkers(umarkers)
+>>>>>>> 7eb124b1fd867baa6792878dd25808d9f16e3c5d
 	}
 
   function handleCardInfo(){}
@@ -50,6 +58,7 @@ function MapContainer(){
           	</Popup>
 		  </Marker>
 		)}
+<<<<<<< HEAD
 
 		{markers.map((position, idx) =>
       <Marker 
@@ -62,6 +71,8 @@ function MapContainer(){
 		  </Marker>
       
 		)}
+=======
+>>>>>>> 7eb124b1fd867baa6792878dd25808d9f16e3c5d
 
 
       </Map>
