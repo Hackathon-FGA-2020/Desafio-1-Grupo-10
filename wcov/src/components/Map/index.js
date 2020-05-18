@@ -56,8 +56,6 @@ function MapContainer(){
 		  </Marker>
       
 		)}
-
-
       </Map>
       </div>
   )

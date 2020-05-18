@@ -24,7 +24,7 @@ import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
 import HomeIcon from '@material-ui/icons/Home';
 
-import {useStyles} from './style'
+import {useStyles} from './styles'
 
 export default function Header({children}) {
 
@@ -139,7 +139,7 @@ export default function Header({children}) {
         })}
       >
         <div className={classes.drawerHeader} />
-        
+        {children}
       </main>
 
     </div>
