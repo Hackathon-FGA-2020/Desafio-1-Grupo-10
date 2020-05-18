@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, TileLayer, Marker, Popup, ZoomControl, ScaleControl } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup} from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
 import './style.css'
@@ -25,7 +25,7 @@ function MapContainer(){
 	const [markers, setMarkers] = React.useState([[-15.8276, -47.9218]]);
   
 	const addmarker = (e) => {
-    if(enabler == true){
+    if(enabler === true){
       const {lat, lng} = e.latlng
       const newPos = [lat, lng]
       setMarkers([...markers, newPos])
@@ -36,7 +36,7 @@ function MapContainer(){
   return (
       <div>
 	  <Map 
-	    center={position} zoom={11} 
+	    center={position} zoom={13} 
 		style={mapSize}
 		onClick={addmarker} 
       >

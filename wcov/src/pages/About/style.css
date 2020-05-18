@@ -1,11 +1,11 @@
-h1{
+.title{
     color : #747474;
     font-size:  38px;
     text-align: center;
     font-family: Georgia;
 }
 
-p{
+.text{
     color : #303030;
     font-size: 28px;
     font-family: Georgia;

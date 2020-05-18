@@ -9,7 +9,7 @@ import { makeStyles  } from '@material-ui/core/styles'
     position:'absolute',
     zIndex:2,
     top:80,
-    right:15,
+    right:30,
     borderRadius: 10,
     boxShadow: '3px 3px 5px 6px #ccc',
     

@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from '@material-ui/core'
 import {SpeedDial, SpeedDialAction, SpeedDialIcon} from '@material-ui/lab'
 import { withStyles } from '@material-ui/core/styles'
 import EditIcon from '@material-ui/icons/Edit'
 import {reverseEnabler} from '../Map'
+import Form from '../Form'
 
 import './style.css'
 
@@ -31,9 +31,9 @@ const options = [
 ];
 
 function FloatButton(props){
-  const { classes } = props;
+  
   const [openOp, setOpenOp] = React.useState(false);
-  //const [hidden, setHidden] = React.useState(false);
+  const [openForm, setOpenForm] = React.useState(false);
 
   const openDial = () => {
     setOpenOp(!openOp);
@@ -42,10 +42,13 @@ function FloatButton(props){
   const handleOptions = (optionName) => {
     if(optionName === 'Edit') {
       reverseEnabler();
+      setOpenForm(true)
     }
   };
 
   return (
+  <>
+    <Form display={openForm} event={setOpenForm}/>
     <div className="floatButtonContainer" >
 	  <SpeedDial
       ariaLabel="Map Options"
@@ -65,6 +68,7 @@ function FloatButton(props){
       ))}
     </SpeedDial>  
     </div>
+  </>
   )
 }
 

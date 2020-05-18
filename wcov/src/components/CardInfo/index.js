@@ -8,7 +8,7 @@ function CardInfo (){
 
   return (
         <>
-        <h1 className={classes.title} >Titulo</h1>
+        <h1 className={classes.title} >Título</h1>
         <Divider />
         <p className={classes.description} >
           <strong>Descrição: </strong>

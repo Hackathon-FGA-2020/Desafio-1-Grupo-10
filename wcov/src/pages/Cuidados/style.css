@@ -1,0 +1,30 @@
+.title{
+    color : #747474;
+    font-size:  38px;
+    text-align: center;
+    font-family: Georgia;
+}
+
+.text{
+    color : #303030;
+    font-size: 28px;
+    font-family: Georgia;
+    text-align: justify;
+
+}
+
+.card_02{
+    position: relative;
+    width: 660px;
+    height: 660px;
+    top: 62px;
+    left: 200px;
+  }
+
+  .card_03{
+    position: relative;
+    width: 660px;
+    height: 660px;
+    top: 62px;
+    left: 50px;
+  }

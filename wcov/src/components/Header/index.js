@@ -23,6 +23,7 @@ import HealingIcon from '@material-ui/icons/Healing';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
 import HomeIcon from '@material-ui/icons/Home';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 
 import {useStyles} from './styles'
 
@@ -98,20 +99,31 @@ export default function Header({children}) {
               <ListItemText primary="Mapeamento de casos" />
         </ListItem>
 
-        <ListItem button >
-              <ListItemIcon><HealingIcon /></ListItemIcon>
-              <ListItemText primary="Cuidados" />
-        </ListItem>
-        
-        <ListItem button >
-              <ListItemIcon><LocalHospitalIcon /></ListItemIcon>
-              <ListItemText primary="Atendimento" />
-        </ListItem>
+        <Link className={classes.linkText} to="/numero-de-casos" >
+          <ListItem button >
+              <ListItemIcon><TrendingUpIcon /></ListItemIcon>
+              <ListItemText primary="Número de casos" />
+          </ListItem>
+        </Link>
+
+        <Link className={classes.linkText} to="/cuidados" >
+          <ListItem button >
+                <ListItemIcon><HealingIcon /></ListItemIcon>
+                <ListItemText primary="Cuidados" />
+          </ListItem>
+        </Link>
 
         <ListItem button >
-              <ListItemIcon><MoodBadIcon /></ListItemIcon>
-              <ListItemText primary="Procurando ajuda" />
+              <ListItemIcon><LocalHospitalIcon /></ListItemIcon>
+              <ListItemText primary="Atendimentos" />
         </ListItem>
+
+        <Link className={classes.linkText} to="/ajuda">
+          <ListItem button >
+                <ListItemIcon><MoodBadIcon /></ListItemIcon>
+                <ListItemText primary="Procurando ajuda" />
+          </ListItem>
+        </Link>
 
         </List>
         <Divider />
@@ -120,10 +132,9 @@ export default function Header({children}) {
         <ListItem button onClick = {() => window.open(url)}>
             <ListItemIcon><InfoIcon /></ListItemIcon>
             <ListItemText primary="Mais informações" />
-      
-          </ListItem>
+        </ListItem>
 
-          <Link className={classes.linkText} to="/sobre" >
+        <Link className={classes.linkText} to="/sobre" >
           <ListItem button >
                 <ListItemIcon><InfoIcon /></ListItemIcon>
                 <ListItemText primary="Sobre"/>

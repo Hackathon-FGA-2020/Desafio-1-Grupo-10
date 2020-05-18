@@ -8,11 +8,12 @@ export const useStyles = makeStyles({
   },
 
   title:{
-    fontSize:32
+    fontSize:30
   },
 
   description:{
-    marginTop:15
+    marginTop:15,
+    fontSize:16
   }
 
 })
