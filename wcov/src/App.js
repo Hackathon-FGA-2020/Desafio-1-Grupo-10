@@ -9,10 +9,8 @@ export default function App(){
 
 	return(
 		<>
-			<Header >
+			<Header />
 
-
-			</Header>
 				<MapContainer/>
 				<FloatButton/>
 		</>

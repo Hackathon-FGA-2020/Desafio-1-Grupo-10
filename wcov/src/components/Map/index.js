@@ -43,6 +43,13 @@ function MapContainer(){
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           />
+		{markers.map((position) =>
+		  <Marker key={'marker-${idx}'} position={position}>
+			<Popup>
+            	<span>A pretty CSS3 popup. <br/> Easily customizable.</span>
+          	</Popup>
+		  </Marker>
+		)}
 
 		{markers.map((position, idx) =>
       <Marker 
