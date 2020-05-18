@@ -7,6 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
+import {Link} from 'react-router-dom'
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,6 +22,7 @@ import MapIcon from '@material-ui/icons/Map';
 import HealingIcon from '@material-ui/icons/Healing';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import MoodBadIcon from '@material-ui/icons/MoodBad';
+import HomeIcon from '@material-ui/icons/Home';
 
 import {useStyles} from './style'
 
@@ -82,7 +84,15 @@ export default function Header({children}) {
         </div>
         <Divider />
         <List>
-          
+
+        <Link className={classes.linkText} to="/" >
+          <ListItem button >
+                <ListItemIcon><HomeIcon /></ListItemIcon>
+                <ListItemText primary="Home" />
+                
+          </ListItem>
+        </Link>
+
         <ListItem button >
               <ListItemIcon><MapIcon /></ListItemIcon>
               <ListItemText primary="Mapeamento de casos" />
@@ -113,10 +123,13 @@ export default function Header({children}) {
       
           </ListItem>
 
+          <Link className={classes.linkText} to="/sobre" >
           <ListItem button >
-            <ListItemIcon><InfoIcon /></ListItemIcon>
-            <ListItemText primary="Sobre" />
+                <ListItemIcon><InfoIcon /></ListItemIcon>
+                <ListItemText primary="Sobre"/>
+                
           </ListItem>
+        </Link>
 
         </List>
       </Drawer>

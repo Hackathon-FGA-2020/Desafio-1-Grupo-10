@@ -5,7 +5,7 @@ import farmaciaIcon from '../assets/Mapa/Farmacia.svg'
 const iconFarmacia = new L.Icon({
     iconUrl: farmaciaIcon,
     iconAnchor: null,
-    popupAnchor: null,
+    popupAnchor: [0,0],
     shadowUrl: null,
     shadowSize: null,
     shadowAnchor: null,

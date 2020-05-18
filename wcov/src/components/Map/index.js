@@ -3,34 +3,35 @@ import { Map, TileLayer, Marker, Popup, ZoomControl, ScaleControl } from 'react-
 import 'leaflet/dist/leaflet.css'
 
 import './style.css'
-import CardInfo from '../CardInfo'
 import { iconFarmacia } from '../../Icon'
+import CardInfo from '../CardInfo'
+
 
 const position = [-15.8276, -47.9218]
-
+var enabler
 
 //VV Tentando fazer funcinoar : calc(~'100vh - 100px') 
 const mapSize = {
   height: "95vh",
   zIndex: 1
-} 
+}
+
+const reverseEnabler = () => {
+  enabler = !enabler
+}
 
 function MapContainer(){
 
 	const [markers, setMarkers] = React.useState([[-15.8276, -47.9218]]);
-
-
+  
 	const addmarker = (e) => {
-    const newmarkers = markers
-    const {lat, lng} = e.latlng
-    
-		const newPos = [lat, lng]
-    newmarkers.push(newPos)
-    console.log(newmarkers)
-		setMarkers([...markers, newPos])
+    if(enabler == true){
+      const {lat, lng} = e.latlng
+      const newPos = [lat, lng]
+      setMarkers([...markers, newPos])
+      reverseEnabler()
+    }
 	}
-
-  function handleCardInfo(){}
 
   return (
       <div>
@@ -43,13 +44,6 @@ function MapContainer(){
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           />
-		{markers.map((position) =>
-		  <Marker key={'marker-${idx}'} position={position}>
-			<Popup>
-            	<span>A pretty CSS3 popup. <br/> Easily customizable.</span>
-          	</Popup>
-		  </Marker>
-		)}
 
 		{markers.map((position, idx) =>
       <Marker 
@@ -57,8 +51,8 @@ function MapContainer(){
       position={position}
       icon={iconFarmacia}>
 			<Popup>
-            	<span>A pretty CSS3 popup. <br/> Easily customizable.</span>
-          	</Popup>
+				<CardInfo/>
+      </Popup>
 		  </Marker>
       
 		)}
@@ -71,4 +65,4 @@ function MapContainer(){
 }
 
 export default MapContainer
-
+export {reverseEnabler}

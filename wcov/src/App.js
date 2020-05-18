@@ -1,19 +1,15 @@
 import React from 'react';
-import Header from './components/Header'
-import MapContainer from './components/Map'
-import FloatButton from './components/FloatButton'
+import { BrowserRouter } from 'react-router-dom'
+import Routes from './routes'
 
 import './styles/global.css'
 
 export default function App(){
 
 	return(
-		<>
-			<Header />
-
-				<MapContainer/>
-				<FloatButton/>
-		</>
+		<BrowserRouter>
+		<Routes />
+		</BrowserRouter>
 	)
 }
 

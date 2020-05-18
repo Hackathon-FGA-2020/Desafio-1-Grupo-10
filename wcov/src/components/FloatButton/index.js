@@ -1,11 +1,9 @@
 import React from 'react'
 import Button from '@material-ui/core'
-
 import {SpeedDial, SpeedDialAction, SpeedDialIcon} from '@material-ui/lab'
-
 import { withStyles } from '@material-ui/core/styles'
-
 import EditIcon from '@material-ui/icons/Edit'
+import {reverseEnabler} from '../Map'
 
 import './style.css'
 
@@ -28,8 +26,8 @@ const styles = {
 };
 
 const options = [
-  { icon: <EditIcon />, name: 'Copy' },
-  { icon: <EditIcon />, name: 'Save' },
+  { icon: <EditIcon />, name: 'Edit' },
+  { icon: <EditIcon />, name: 'Destroy' },
 ];
 
 function FloatButton(props){
@@ -37,8 +35,14 @@ function FloatButton(props){
   const [openOp, setOpenOp] = React.useState(false);
   //const [hidden, setHidden] = React.useState(false);
 
-  const handleOptions = () => {
+  const openDial = () => {
     setOpenOp(!openOp);
+  }
+
+  const handleOptions = (optionName) => {
+    if(optionName === 'Edit') {
+      reverseEnabler();
+    }
   };
 
   return (
@@ -47,7 +51,7 @@ function FloatButton(props){
       ariaLabel="Map Options"
       FabProps={{style: styles}}
       icon={<SpeedDialIcon openIcon={<EditIcon />} />}
-      onClick={handleOptions }
+      onClick={openDial}
       open={openOp}
     >
       {options.map((option) => (
@@ -55,7 +59,7 @@ function FloatButton(props){
           key={option.name}
           icon={option.icon}
           tooltipTitle={option.name}
-          onClick={handleOptions}
+          onClick={() => handleOptions(option.name)}
           FabProps={{style: {height:'50px', width:'50px'}}}
         />
       ))}
