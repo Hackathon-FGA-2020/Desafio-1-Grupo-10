@@ -1,9 +1,25 @@
 import React from 'react'
+import Card from '@material-ui/core/Card'
+import CardContent from "@material-ui/core/CardContent"
+import CardActions from '@material-ui/core/CardActions'
 
 
 function CardInfo (){
 
-  return <h1>Hello</h1>
+  return (
+
+    <Card>
+      <CardContent>
+        <h1>Titulo</h1>
+        <p>Descrição</p>
+      </CardContent>
+
+      <CardActions>
+
+      </CardActions>
+    </Card>
+
+  )
 }
 
 

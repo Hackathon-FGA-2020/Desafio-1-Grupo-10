@@ -16,12 +16,16 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import InfoIcon from '@material-ui/icons/Info';
+import MapIcon from '@material-ui/icons/Map';
+import HealingIcon from '@material-ui/icons/Healing';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import MoodBadIcon from '@material-ui/icons/MoodBad';
 
 import {useStyles} from './style'
 
 export default function Header({children}) {
+
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -76,21 +80,36 @@ export default function Header({children}) {
         </div>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          
+        <ListItem button >
+              <ListItemIcon><MapIcon /></ListItemIcon>
+              <ListItemText primary="Mapeamento de casos" />
+        </ListItem>
+
+        <ListItem button >
+              <ListItemIcon><HealingIcon /></ListItemIcon>
+              <ListItemText primary="Cuidados" />
+        </ListItem>
+        
+        <ListItem button >
+              <ListItemIcon><LocalHospitalIcon /></ListItemIcon>
+              <ListItemText primary="Atendimento" />
+        </ListItem>
+
+        <ListItem button >
+              <ListItemIcon><MoodBadIcon /></ListItemIcon>
+              <ListItemText primary="Procurando ajuda" />
+        </ListItem>
+
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+
+          <ListItem button >
+            <ListItemIcon><InfoIcon /></ListItemIcon>
+            <ListItemText primary="Sobre" />
+          </ListItem>
+
         </List>
       </Drawer>
       <main
