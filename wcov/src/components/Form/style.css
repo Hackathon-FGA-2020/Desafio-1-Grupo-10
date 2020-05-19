@@ -6,16 +6,10 @@
     top: 80px;
     right: 30px;
     z-index: 2;
-    padding: 60px 40px;
+    padding: 40px 40px;
     background: #FFFFFF;
     box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-}
-
-.containerButtonForm{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .titleForm{
@@ -42,13 +36,43 @@
 
 
 .linhaDivisoria{
-    margin: 10px;
+    margin-top: 20px;
 
     border: 1px solid #BEBCBC;
 }
 
 .selectBox{
-    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 400px;
+    align-items: center;
+}
+
+
+.formControl{
+    margin: spacing(1);
+    min-width: 120;
+}
+
+/*
+.selectBox{
+    margin: 10px;
+    z-index: 3;
+    width: 300px;
+
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+*/
+.descricaoBox{
+    width: 400px;
+    align: center;
+    margin-top: 20px;
+
+    background: #F2F2F2;
+    border-radius: 5px;
 }
 
 .buttonMarcarnoMapa{
@@ -57,6 +81,7 @@
     width: auto;
     height: auto;
     border: none;
+    margin-top: 10px;
 
     font-family: Roboto;
     font-style: normal;
@@ -69,12 +94,17 @@
     background: none;
 }
 
+.containerButtonForm{
+    display: flex;
+    justify-content: right;
+}
+
 .buttonCriar{
     justify-content: center;
-    align-items: center;
     width: auto;
     height: auto;
     border: none;
+    margin-right:55px;
 
     font-family: Roboto;
     font-style: normal;
@@ -90,10 +120,10 @@
 
 .buttonFechar{
     justify-content: center;
-    align-items: center;
     width: auto;
     height: auto;
     border: none;
+    margin-right:20px;
 
     font-family: Roboto;
     font-style: normal;

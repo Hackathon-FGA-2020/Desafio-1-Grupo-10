@@ -1,63 +1,78 @@
 import React from 'react'
-import {Slide} from "@material-ui/core"
-import { Button, Card, CardContent, CardActions, Select, TextField, InputLabel, MenuItem} from '@material-ui/core'
+import {Slide, FormControl} from "@material-ui/core"
+import { Button, Card, CardContent, CardActions, TextField, InputLabel, Select, MenuItem} from '@material-ui/core'
 import firebase, { FirebaseContext } from '../Firebase'
 
 
 import './style.css'
 
+var markEnabled
 
-function Form (){
+function addMarker(marker){
+	if(markEnabled === true) {
+		markEnabled = !markEnabled
+		const markersRef = firebase.database().ref('markers');
+		markersRef.push(marker)
+	}
+}
+
+function Form (props){
 
   function handleChange(buttonName){
 	if(buttonName === "Fechar"){
-		
+		props.event(false)
 	}  
-	else {
-		const markersRef = firebase.database().ref('markers');
-		const marker = {
-			id: 2,
-			coords: [-59,-40]
-		}
-		//markersRef.push(marker)
+	else if(buttonName === "Marcar")
+	{
+		markEnabled = !markEnabled
 	}
 
   }
 
+  const evento = []
+
   return (
     
-	<Slide direction="left" mountOnEnter unmountOnExit className="containerForm"  in={true} >
+	<Slide direction="left" mountOnEnter unmountOnExit className="containerForm"  in={props.display} >
 		<form onSubmit={()=>{}} >
         
       <div>
-        <label className="titleForm">
+        <label class="titleForm">
           Quer avisar sobre algum evento?
         </label>
       </div>
       <div>
-        <label className="textForm">
+        <label class="textForm">
           Esta área é destinada para que os usuários possam compartilhar sobre eventos nas proximidades.
         </label>
       </div>
-      <hr className="linhaDivisoria"></hr>
+      <hr class="linhaDivisoria"></hr>
       <div>
-          <InputLabel id="a">Selecione um evento</InputLabel>
-          <Select className="selectBox"
-            id="a"
-          >
-            <MenuItem value="mango">Mango</MenuItem>
-          </Select>
-          <div/>
-			  <TextField label="Descrição" variant="filled" multiline rows={4}/>
+		  <FormControl className="formControl">
+			<InputLabel id="inital">Selecione um evento</InputLabel>
+			<Select
+				labelId="initial"
+				id="inital-2"
+				className="selectBox"
+				
+				onChange={handleChange}
+			>
+				<MenuItem value={'mascara'}>Distribuição de máscaras</MenuItem>
+				<MenuItem value={20}>Twen</MenuItem>
+				<MenuItem value={30}>Thirty</MenuItem>
+			</Select>
+		  </FormControl>
+      <div/>
+			  <TextField label="Descrição" variant="filled" multiline rows={4} className="descricaoBox"/>
       </div>
 
       <div>
-        <Button class="buttonMarcarnoMapa" onClick={()=>handleChange()}>MARCAR NO MAPA</Button>
+        <Button class="buttonMarcarnoMapa" onClick={()=>handleChange("Marcar")}>MARCAR NO MAPA</Button>
       </div>
 
-      <div class= "containerButtonForm" >
+      <div class="containerButtonForm" >
         <Button class="buttonCriar" type="submit" >CRIAR</Button>
-        <Button class="buttonFechar">FECHAR</Button>
+        <Button class="buttonFechar" onClick={()=>handleChange("Fechar")}>FECHAR</Button>
       </div>    
 
 		</form>
@@ -68,40 +83,4 @@ function Form (){
   
 
 export default Form
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export {addMarker}
