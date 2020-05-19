@@ -1,0 +1,111 @@
+.containerForm{  
+    display: block; /*o outro era flex, n sei ainda qual fica melhor*/
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    z-index: 2;
+    padding: 60px 40px;
+    background: #FFFFFF;
+    box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.containerButtonForm{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleForm{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+    margin-bottom: 30px ;
+}
+
+.textForm{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #595959;
+}
+
+
+.linhaDivisoria{
+    margin: 10px;
+
+    border: 1px solid #BEBCBC;
+}
+
+.selectBox{
+    width: 350px;
+}
+
+.buttonMarcarnoMapa{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2A61F0;
+    background: none;
+}
+
+.buttonCriar{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #32D656;
+    background: none;
+    
+}
+
+.buttonFechar{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #FC0C0C;
+    background: none;
+    
+}
+
+    
+    

@@ -1,6 +1,4 @@
-import app from 'firebase/app'
-import 'firebase/database'
-
+import firebase from 'firebase'
 const config = {
   // Your web app's Firebase configuration
   apiKey: process.env.REACT_APP_API_KEY,
@@ -12,12 +10,6 @@ const config = {
   appId: process.env.REACT_APP_APP_ID
 }
 
-function Firebase() {
-  app.initializeApp(config)
-  const datab = app.database()
+firebase.initializeApp(config)
 
-  const marker = uid => datab.ref(`markers/${uid}`)
-  const markers = () => datab.ref('markers')
-}
-
-export default Firebase;
+export default firebase;

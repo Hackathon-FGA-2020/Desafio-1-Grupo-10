@@ -1,0 +1,47 @@
+.container{
+    
+    display: auto;
+    margin: 20px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 80px 120px;
+    
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+    margin-bottom: 55px ;
+}
+
+.grade{
+    justify-content: space-between;
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 7px;
+    margin: 5px 0;
+    
+    background: #E91E63;
+    border-radius: 8px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    display:  block;
+    color: #FAFAFA;
+
+}

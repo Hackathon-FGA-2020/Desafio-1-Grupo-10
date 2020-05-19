@@ -1,52 +1,107 @@
 import React from 'react'
 import {Slide} from "@material-ui/core"
-import { Button, Card, CardContent, CardActions } from '@material-ui/core'
+import { Button, Card, CardContent, CardActions, Select, TextField, InputLabel, MenuItem} from '@material-ui/core'
+import firebase, { FirebaseContext } from '../Firebase'
 
-import useStyles from './styles'
 
-function Form (props){
+import './style.css'
 
-  const classes = useStyles()
-  
-  function handleChange(){
-    props.event(false)
+
+function Form (){
+
+  function handleChange(buttonName){
+	if(buttonName === "Fechar"){
+		
+	}  
+	else {
+		const markersRef = firebase.database().ref('markers');
+		const marker = {
+			id: 2,
+			coords: [-59,-40]
+		}
+		//markersRef.push(marker)
+	}
+
   }
 
   return (
-
-    <div  >
     
-    <Slide direction="left" mountOnEnter unmountOnExit className={classes.root} in={props.display} >
-        <Card>
-          
-            <CardContent>
-            <form>
-              <label>
-                Título:
-                <input/>
-              </label>
+	<Slide direction="left" mountOnEnter unmountOnExit className="containerForm"  in={true} >
+		<form onSubmit={()=>{}} >
+        
+      <div>
+        <label className="titleForm">
+          Quer avisar sobre algum evento?
+        </label>
+      </div>
+      <div>
+        <label className="textForm">
+          Esta área é destinada para que os usuários possam compartilhar sobre eventos nas proximidades.
+        </label>
+      </div>
+      <hr className="linhaDivisoria"></hr>
+      <div>
+          <InputLabel id="a">Selecione um evento</InputLabel>
+          <Select className="selectBox"
+            id="a"
+          >
+            <MenuItem value="mango">Mango</MenuItem>
+          </Select>
+          <div/>
+			  <TextField label="Descrição" variant="filled" multiline rows={4}/>
+      </div>
 
-              <label>
-                Descrição:
-                <textarea />
-              </label>
-            </form>
+      <div>
+        <Button class="buttonMarcarnoMapa" onClick={()=>handleChange()}>MARCAR NO MAPA</Button>
+      </div>
 
-            </CardContent>
-            <CardActions>
-              <Button type="submit" >
-                Salvar
-              </Button>
-              <Button onClick={handleChange} >
-                Fechar
-              </Button>
+      <div class= "containerButtonForm" >
+        <Button class="buttonCriar" type="submit" >CRIAR</Button>
+        <Button class="buttonFechar">FECHAR</Button>
+      </div>    
 
-            </CardActions>
-        </Card>
-
-      </Slide>
-    </div>
+		</form>
+    
+	</Slide>
   )
 }
+  
 
 export default Form
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
