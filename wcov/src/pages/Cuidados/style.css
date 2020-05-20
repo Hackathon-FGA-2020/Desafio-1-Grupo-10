@@ -1,34 +1,102 @@
 .containerCuidados{
 
   display: flex;
-  flex: 1;
-  background-color: white;
-  margin: 40px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #c4c4c4;
-  flex-direction: column;
-  
-
-}
-
-.containderImg{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
+  margin: 40px auto ; 
+  max-width: 1200px;
+  background-color: #FFFDFD;
+  border-radius: 15px;
+  padding: 60px 40px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   flex-wrap: wrap;
-  justify-content: space-around;
-  
-}
-.img{
 
-    max-width:650px;
-    max-height:650px;
 }
 
-.containerCuidados > div {
-  margin-top: 25px;
+.TitleCuidados{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
   display: flex;
-  flex: 1;
+  align-items: center;
+  color: #E91E63;
+}
+
+.descriptionCuidados{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  color: #555151;
+}
+.containerContentCuidados{
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
   justify-content: center;
+
+}
+
+.containerContentCuidados + .containerContentCuidados{
+
+  margin-bottom: 80px;
+
+}
+
+
+.listCuidados{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #555151;
+  margin-left: 20px;
+  list-style: none;
+
+}
+
+.listCuidados > li::before{
+  content: '•';
+  font-size: 25px;
+  margin-right: 10px;
+  color: #E91E63;
+}
+
+.atentionCuidados{
+  width: 580px;
+  height: 220px;
+  
+  background: #E91E63;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.atentionCuidados > p > strong {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #FFFF00;
+}
+
+.atentionCuidados > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 42px;
+  color: #FFFFFF;
 }
