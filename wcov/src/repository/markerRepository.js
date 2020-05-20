@@ -17,7 +17,6 @@ class MarkerRepository{
 	}
 
 	async fetchMarkersFromDB(){
-		var test
 		await this.markersRef.ref('markers').once('value', (snapshot) => {	
 			let markVals = snapshot.val()
 			let newState = []

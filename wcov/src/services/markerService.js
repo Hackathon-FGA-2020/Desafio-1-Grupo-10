@@ -1,4 +1,3 @@
-import React from 'react'
 import MarkerRepository from '../repository/markerRepository'
 
 const newM = new MarkerRepository()

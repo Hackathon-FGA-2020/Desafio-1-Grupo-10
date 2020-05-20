@@ -8,9 +8,12 @@ import Ajuda from '../pages/Ajuda'
 import Atendimentos from '../pages/Atendimentos'
 
 
+
+
 export default function Routes(){
   return(
     <Switch>
+      
       <Route path="/" exact strict component={Home} />
       <Route path="/sobre" exact strict component={About} />
       <Route path="/cuidados" exact string component={Cuidados} />

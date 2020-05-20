@@ -1,32 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
-import {removeMarker, getMarker} from '../../services/markerService'
 import firebase from '../Firebase'
-import './style.css'
-import { iconFarmacia } from '../../Icon'
-import CardInfo from '../CardInfo'
+
+
 import {addMarker} from '../Form'
+import CardInfo from '../CardInfo'
+import { iconFarmacia } from '../../Icon'
+import {removeMarker, getMarker} from '../../services/markerService'
 
 
-const position = [-15.8276, -47.9218]
-
-//VV Tentando fazer funcionar : calc(~'100vh - 100px') 
-const mapSize = {
-  height: "95vh",
-  zIndex: 1
-}
-
-
+import './style.css'
+import 'leaflet/dist/leaflet.css'
 
 function MapContainer(){
 	const markersRef = firebase.database()
-
-	const [markers, setMarkers] = React.useState([{
-		id: "0",
-		iconKind: "NULL",
-		coords: [-5,-5]
-	}])
+	const [markers, setMarkers] = useState([])
 
 
 useEffect(  () => {
@@ -47,15 +35,15 @@ useEffect(  () => {
 		})
 		//newerState.map()
 		console.log(newerState)
-	},[])
+	},[markersRef])
 
-	const makeMarker = (e) => {
-		const {lat, lng} = e.latlng
-		addMarker({
-			iconKind: "NULL",
-			coords: [lat,lng]
-		})
 
+	function makeMarker (e) {
+			const {lat, lng} = e.latlng
+			addMarker({
+				iconKind: "NULL",
+				coords: [lat,lng]
+			})
 		}
 
 	function deleteMarker(markerId){
@@ -63,37 +51,32 @@ useEffect(  () => {
 	}
 
 
-  return (
-      <div>
-	  <Map 
-	    center={position} zoom={13} 
-		style={mapSize}
-		onclick={makeMarker}
-      >
-			<TileLayer
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-				attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-			/>
-		
-		{markers.map((currentMark) =>
-			<>
+	return (
 
-			<Marker 
-			key={currentMark.id} 
-			position={currentMark.coords}
-			icon={iconFarmacia}>
-				<Popup onClose={() => deleteMarker(currentMark.id)} >
-					<CardInfo/>
-				</Popup>				
-			</Marker>
-
-			</>
-		)}
-	
-
-      </Map>
-      </div>
-  )
+		<>
+			<Map 
+			center={[-15.8276, -47.9218]} zoom={13} 
+			className="mapContainer"
+			onclick={makeMarker}
+			>
+				<TileLayer
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+					attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+				/>
+				
+				{ markers.map((currentMark) => ( 
+						
+						<Marker key={currentMark.id} position={currentMark.coords} icon={iconFarmacia}>
+							<Popup onClose={() => deleteMarker(currentMark.id)} >
+								<CardInfo/>
+							</Popup>				
+						</Marker>
+					
+					))
+				}
+			</Map>
+		</>
+	)
 
 }
 

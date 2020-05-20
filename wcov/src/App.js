@@ -1,14 +1,21 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
-import Routes from './routes'
 
+// import {MarkerProvider } from './context/MarkerContext'
+// import { FirebaseProvider } from './context/FirebaseContext'
+
+import Routes from './routes'
 import './styles/global.css'
 
 export default function App(){
 
 	return(
 		<BrowserRouter>
-		<Routes />
+		{/* <FirebaseProvider> */}
+			{/* <MarkerProvider> */}
+				<Routes />
+			{/* </MarkerProvider> */}
+		{/* </FirebaseProvider> */}
 		</BrowserRouter>
 	)
 }
