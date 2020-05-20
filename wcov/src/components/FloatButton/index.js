@@ -26,7 +26,6 @@ const styles = {
 
 const options = [
   { icon: <EditIcon />, name: 'Edit' },
-  { icon: <EditIcon />, name: 'Destroy' },
 ];
 
 function FloatButton(props){
@@ -35,7 +34,8 @@ function FloatButton(props){
   const [openForm, setOpenForm] = React.useState(false);
 
   const openDial = () => {
-    setOpenOp(!openOp);
+    setOpenForm(!openForm);
+    //setOpenOp(!openOp);
   }
 
   const handleOptions = (optionName) => {
