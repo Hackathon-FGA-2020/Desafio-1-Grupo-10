@@ -16,7 +16,7 @@ class MarkersService {
       for (let marker in markers) {
 				allMarkers.push({
 					id: marker,
-					iconKind: markers[marker].iconKind,
+					icon: markers[marker].iconKind,
 					coords: markers[marker].coords
 				})
 			}

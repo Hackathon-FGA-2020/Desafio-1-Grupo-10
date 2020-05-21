@@ -59,3 +59,8 @@
     color: #FAFAFA;
 
 }
+
+.buttonHelp:hover{
+    background: #FAFAFA;
+    color: #E91E63;
+}

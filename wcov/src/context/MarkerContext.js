@@ -1,15 +1,15 @@
 import React, { createContext } from 'react'
 
 const markerData = {
+  id:'',
   icon:'',
-  title:'',
+  name:'',
   description:'',
-  coord: [0 ,0],
+  coords: [0 ,0],
   like: 0,
   dislike:0,
   create_at: Date.now(),
   currentMarker: [0,0]
-
 }
 
 

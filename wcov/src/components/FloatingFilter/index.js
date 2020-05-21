@@ -11,16 +11,26 @@ import './style.css'
 
 //#TODO: limitar movimento para abaixo do mapa
 
+function FloatingFilter(props){
 
-const primaryColor = {
-    color:"#E91E63"
-}
+    const [state, setState] = React.useState({
+        farmaciaShow: false,
+        hospitalShow: false,
+        UPAShow: false,
+        eventosShow: false,
+    });
 
-function FloatingFilter(){
+
+    const handleChange = (event) => {
+        var submit = {...state, [event.target.name]: event.target.checked}
+        setState({ ...state, [event.target.name]: event.target.checked });
+        props.response(submit);     
+        };
+
 
     return (
     <>  
-        <Draggable>
+        <Draggable bounds="body">
             <div className="containerFilter">
                 <div>
                     <h1 className='titleFilter' >Mostrar</h1>
@@ -32,8 +42,7 @@ function FloatingFilter(){
                             <div className="containerCheckboxes">
 
                                 <FormControlLabel
-                                value="farmaciaShow"
-                                control={<Checkbox />}
+                                control={<Checkbox  name="farmaciaShow" onChange={handleChange}/>}
                                 label="Farmácias"
                                 labelPlacement="end"
                                 />
@@ -43,8 +52,7 @@ function FloatingFilter(){
 
                             <div className="containerCheckboxes">
                                 <FormControlLabel
-                                value="hospitalShow"
-                                control={<Checkbox />}
+                                control={<Checkbox  name="hospitalShow" onChange={handleChange}/>}
                                 label="Hospitais"
                                 labelPlacement="end"
                                 />
@@ -54,8 +62,7 @@ function FloatingFilter(){
 
                             <div className="containerCheckboxes">
                                 <FormControlLabel
-                                value="UPAShow"
-                                control={<Checkbox />}
+                                control={<Checkbox  name="UPAShow" onChange={handleChange}/>}
                                 label="UPAs"
                                 labelPlacement="end"
                                 />
@@ -65,8 +72,7 @@ function FloatingFilter(){
 
                             <div>
                                 <FormControlLabel
-                                value="eventosShow"
-                                control={<Checkbox  />}
+                                control={<Checkbox  name="eventosShow" onChange={handleChange}/>}
                                 label="Eventos"
                                 labelPlacement="end"
                                 />
@@ -78,6 +84,7 @@ function FloatingFilter(){
         </Draggable>
     </>
     )
+    
 }
 
 export default FloatingFilter

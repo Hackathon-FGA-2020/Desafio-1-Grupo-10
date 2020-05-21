@@ -94,6 +94,25 @@
     background: none;
 }
 
+.buttonMarcarnoMapaDisabled{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+    margin-top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+    background: none;
+}
+
 .containerButtonForm{
     display: flex;
     justify-content: right;
@@ -116,7 +135,25 @@
     align-items: center;
     color: #32D656;
     background: none;
-    
+}
+
+.buttonCriarDisabled{
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border: none;
+    margin-top: 15px;
+    margin-right: 55px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+    background: none;
 }
 
 .buttonFechar{

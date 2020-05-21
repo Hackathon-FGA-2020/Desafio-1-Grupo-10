@@ -4,7 +4,7 @@ const newM = new MarkerRepository()
 
 function sendMarker(marker) {
 	if(typeof marker === 'object') {
-		if(marker.hasOwnProperty('iconKind') && marker.hasOwnProperty('coords')){
+		if(marker.hasOwnProperty('icon') && marker.hasOwnProperty('coords')){
 			MarkerRepository().sendMarkerToDB(marker)
 		}
 	}

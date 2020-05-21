@@ -7,6 +7,7 @@ import Mapeamento from '../pages/MapdeCasos'
 import Ajuda from '../pages/Ajuda'
 import Atendimentos from '../pages/Atendimentos'
 import RAs from '../pages/RAs'
+import Acessibilidade from '../pages/Acessibilidade'
 
 
 export default function Routes(){
@@ -20,6 +21,7 @@ export default function Routes(){
       <Route path='/ajuda' exact strict component ={Ajuda} />
       <Route path='/atendimentos' exact strict component ={Atendimentos} />
       <Route path='/atendimentos/:id' exact strict component = {RAs} />
+      <Route path='/acessibilidade' exact strict component = {Acessibilidade} />
 
     </Switch>
   )

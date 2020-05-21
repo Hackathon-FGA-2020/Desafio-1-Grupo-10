@@ -47,7 +47,7 @@ function Cuidados() {
 
 
         <div className="containerContentCuidados" >
-          <img src={socialDistancing} alt="Distância social" />
+          <img src={distancing} alt="Distância social" />
           <div className="atentionCuidados" >
           <p>
               <strong>Atenção: </strong>
@@ -80,10 +80,12 @@ function Cuidados() {
 
 
           <div className="containerContentCuidados" >
-
-          <p className="descriptionCuidados">
-              Cubra o nariz e  a boca ao espirrar ou tossir.
+          
+          <div className="descriptionCuidados" >
+            <p>
+              Ao tossir ou espirrar cubra o nariz e a boca com o <strong style={{color:"#E91E63"}} >braço</strong>.
             </p>
+          </div>
 
             <img src={cough} alt="Tossir" />
 
@@ -93,7 +95,7 @@ function Cuidados() {
 
           <div className="containerContentCuidados" >
 
-            <img src={distancing} alt="Distância" />
+            <img src={socialDistancing} alt="Distância" />
 
           <p className="descriptionCuidados">
               Em eventos abertos recomenda-se a distância mínima de dois entre pessoas. Evite apertos de mão, abraços e beijos.
@@ -181,25 +183,23 @@ function Cuidados() {
 
           <div className="containerContentCuidados" >
 
-            <div>
-
-
-              <p>
-                Estou com os sintomas, mas não viajei e nem tive acesso a pessoas que voltaram de viagem recentemente. O que fazer?
-            </p>
-              <p>
-                Procure a Unidade Básica de Saúde (USB) mais próxima.
-            </p>
-              <p>
-                Estou com sintomas e tive acesso a pessoas que voltaram de viagem internacional. O que fazer?
-            </p>
-              <p>
-                Entre em contato com 190, 193 ou 199 e informe sua situação.
-            </p>
+            <div className="questionsCuidados" >
+                  <p>
+                    Estou com os sintomas, mas não viajei e nem tive acesso a pessoas que voltaram de viagem recentemente. O que fazer?
+                </p>
+                  <p className="answersCuidados" >
+                    Procure a Unidade Básica de Saúde (UBS) mais próxima.
+                </p>
+                  <p>
+                    Estou com sintomas e tive acesso a pessoas que voltaram de viagem internacional. O que fazer?
+                </p>
+                  <p className="answersCuidados" >
+                    Entre em contato com 190, 193 ou 199 e informe sua situação.
+                </p>
 
             </div>
 
-            <img src={doctor} alt="Doutora" />
+            <img src={doctor} style={{height:550, width:550 }} alt="Doutora" />
           </div>
 
         </div>

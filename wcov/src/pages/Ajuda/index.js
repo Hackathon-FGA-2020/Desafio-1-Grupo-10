@@ -24,8 +24,8 @@ function Ajuda(){
         <p className="textHelp" >Para mais informações sobre os testes, instruções de cadasto e agendamento, acesse os sites:
         </p>
       <div className="containerButtonHelp" >
-        <a href={agendar} target="_blanck" className="buttonHelp" >Instruções</a>
-        <a href={instrucoes} target="_blanck" className="buttonHelp" >Agendar Teste</a>
+        <a href={instrucoes} target="_blanck" className="buttonHelp" >Instruções</a>
+        <a href={agendar} target="_blanck" className="buttonHelp" >Agendar Teste</a>
       </div>
       </div>
 
