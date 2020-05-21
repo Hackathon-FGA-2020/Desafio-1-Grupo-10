@@ -9,7 +9,7 @@ const MD = 4;
 const LG = 3;
 
 function Atendimentos (){
-
+  
   return (
   <>
     <Header/>
@@ -137,7 +137,6 @@ function Atendimentos (){
         </Grid>
 
         
-
       </Grid>
     </div>
   </>

@@ -1,7 +1,9 @@
 .containerFilter{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
+    flex-direction: column;
     bottom: 40px;
     left: 40px;
     width: 222px;
@@ -9,6 +11,7 @@
     z-index: 2;
     padding: 18px;
 
+    opacity: 0.75;
     background: #FFFFFF;
     border-radius: 15px;
 }
@@ -29,4 +32,32 @@
     font-size: 14px;
     line-height: 16px;
     color: #393939;
+}
+
+.containerCheckboxes{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.containerImg{
+    justify-content: right;
+}
+
+.iconFarmacia{
+    justify-content: right;
+    max-width: 57px;
+    max-height: 18px;
+}
+
+.iconHospital{
+    justify-content: right;
+    max-width: 35px;
+    max-height: 27px;
+}
+
+.iconUPA{
+    justify-content: right;
+    max-width: 53px;
+    max-height: 19px;
 }

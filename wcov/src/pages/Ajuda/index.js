@@ -25,13 +25,13 @@ function Ajuda(){
         </p>
       <div className="containerButtonHelp" >
         <a href={agendar} target="_blanck" className="buttonHelp" >Instruções</a>
-        <a href={instrucoes} className="buttonHelp" >Agendar Teste</a>
+        <a href={instrucoes} target="_blanck" className="buttonHelp" >Agendar Teste</a>
       </div>
       </div>
 
       
       <div>
-          <img src={help} />
+          <img src={help} alt="Ajuda" />
       </div>
 
     </div>

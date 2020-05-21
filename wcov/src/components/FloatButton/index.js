@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import {SpeedDial, SpeedDialAction, SpeedDialIcon} from '@material-ui/lab'
 import { withStyles } from '@material-ui/core/styles'
 import EditIcon from '@material-ui/icons/Edit'
@@ -30,8 +30,8 @@ const options = [
 
 function FloatButton(props){
   
-  const [openOp, setOpenOp] = React.useState(false);
-  const [openForm, setOpenForm] = React.useState(false);
+  const [openOp, setOpenOp] = useState(false);
+  const [openForm, setOpenForm] = useState(false);
 
   const openDial = () => {
     setOpenForm(!openForm);
