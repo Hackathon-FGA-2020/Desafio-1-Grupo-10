@@ -1,12 +1,37 @@
 .title{
-    color : #747474;
-    font-size:  38px;
-    text-align: center;
-}
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+  }
+  
+.container{
 
-.text{
-    color : #303030;
-    font-size: 28px;
+    display: flex;
+    margin: 40px auto ; 
+    max-width: 1200px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center
+  
+  }
+
+  .text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
     text-align: justify;
-
+    align-items: center;
+    color: #555151;
+    margin-top: 5px;
 }
