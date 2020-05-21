@@ -6,8 +6,7 @@ import Cuidados from '../pages/Cuidados'
 import Mapeamento from '../pages/MapdeCasos'
 import Ajuda from '../pages/Ajuda'
 import Atendimentos from '../pages/Atendimentos'
-
-
+import RAs from '../pages/RAs'
 
 
 export default function Routes(){
@@ -20,7 +19,8 @@ export default function Routes(){
       <Route path='/mapeamento-de-casos' exact strict component ={Mapeamento} />
       <Route path='/ajuda' exact strict component ={Ajuda} />
       <Route path='/atendimentos' exact strict component ={Atendimentos} />
-      
+      <Route path='/atendimentos/:id' exact strict component = {RAs} />
+
     </Switch>
   )
 }
