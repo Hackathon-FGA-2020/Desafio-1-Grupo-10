@@ -1,4 +1,4 @@
-.container{
+.containerAten{
     
     display: flex;
     margin: 40px; 
@@ -13,7 +13,7 @@
     
 }
 
-.title{
+.titleAten{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -23,12 +23,11 @@
     color: #E91E63;
 }
 
-.grade{
+.gradeAten{
     justify-content: space-between;
-    margin-top: 40px;
 }
 
-.text{
+.textAten{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -39,9 +38,10 @@
     align-items: center;
     color: #555151;
     margin-top: 26px;
+    margin-bottom: 46px;
 }
 
-.button{
+.buttonAten{
     justify-content: center;
     align-items: center;
 
