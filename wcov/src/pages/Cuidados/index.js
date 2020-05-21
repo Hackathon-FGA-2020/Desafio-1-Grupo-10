@@ -26,9 +26,9 @@ function Cuidados() {
         
         <div className="containerContentCuidados" >
 
-          <di>
+          <div>
 
-            <p className="descriptionCuidados">
+            <p className="initDescriptionCuidados" style={{marginBottom: 25}} >
               Ela costuma ocorrer através do contato das mucosa com o ar contaminado com secreções e/ou por contato pessoal, como:
           </p>
 
@@ -40,9 +40,9 @@ function Cuidados() {
               <li>Catarro/Corisa</li>
               <li>Tosse</li>
             </ul>
-          </di>
+          </div>
 
-          <img src={transmissao} style={{ width: 500, height: 500 }} alt="Transmissão" />
+          <img src={transmissao} style={{height:500, width:600}} alt="Transmissão" />
         </div>
 
 
@@ -58,6 +58,7 @@ function Cuidados() {
 
 
 
+      
 
 
           <h1 className="TitleCuidados" >Como se previnir?</h1>
@@ -92,48 +93,51 @@ function Cuidados() {
 
           <div className="containerContentCuidados" >
 
+            <img src={distancing} alt="Distância" />
+
           <p className="descriptionCuidados">
               Em eventos abertos recomenda-se a distância mínima de dois entre pessoas. Evite apertos de mão, abraços e beijos.
             </p>
 
-            <img src={distancing} alt="Distância" />
-
           </div>
 
           <div className="containerContentCuidados" >
-            <img src={stayHome} alt="Ficar em casa" />
 
             <p className="descriptionCuidados">
               Se possível fique em casa e saia somente se for necessário.
             </p>
 
+            <img src={stayHome} alt="Ficar em casa" />
+
           </div>
 
 
           <div className="containerContentCuidados" >
+
+            <img src={fightingCorona} alt="Ficar em casa" />
+
           <p className="descriptionCuidados">
               Mantenha os ambientes bem ventilados e limpos.
             </p>
 
-            <img src={fightingCorona} alt="Ficar em casa" />
-
-
           </div>
 
           <div className="containerContentCuidados" >
-            <img src={handWashing} alt="Lavar as mãos" />
 
             <p className="descriptionCuidados">
               Evite tocar os olhos, boca ou nariz antesde higienizar as mãos e não compartilhe objetos pessoais.
             </p>
+
+            <img src={handWashing} alt="Lavar as mãos" />
 
           </div>
 
 
         </div>
 
+      
 
-        <h1 className="TitleCuidados" >Sintomas</h1>
+        <h1 className="TitleCuidados">Sintomas</h1>
 
         <div>
 
@@ -149,8 +153,10 @@ function Cuidados() {
           </div>
 
           <div className="containerContentCuidados" >
-            <img src={febre} alt="Febre" />
 
+            <img src={febre} alt="Febre" />
+            <div>
+            <p className="descriptionCuidados" style={{marginBottom:15}} >Alguns sintomas são: </p>          
             <ul className="listCuidados" >
               <li>Tosse seca</li>
               <li>Febre</li>
@@ -160,6 +166,7 @@ function Cuidados() {
               <li>Coriza</li>
               <li>Diarreia</li>
             </ul>
+            </div>
 
           </div>
 
@@ -167,10 +174,10 @@ function Cuidados() {
         </div>
 
 
+          <h1 className="TitleCuidados" >O que fazer em casos de suspeitas</h1>
 
         <div>
 
-          <h1 className="TitleCuidados" >O que fazer em casos de suspeitas</h1>
 
           <div className="containerContentCuidados" >
 

@@ -14,18 +14,14 @@ const config = {
 
 firebase.initializeApp(config)
 
-
-const FirebaseContext = createContext(null)
+const FirebaseContext = createContext(firebase)
 
 function FirebaseProvider({children}){
 
-
     return(
-
-      <FirebaseContext.Provider value={firebase} >
+      <FirebaseContext.Provider value={firebase}>
         {children}
       </FirebaseContext.Provider>
-
     )
 }
 

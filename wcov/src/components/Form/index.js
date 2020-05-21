@@ -1,24 +1,16 @@
 import React from 'react'
 import {Slide, FormControl} from "@material-ui/core"
-import { Button, Card, CardContent, CardActions, TextField, InputLabel, Select, MenuItem} from '@material-ui/core'
-import firebase, { FirebaseContext } from '../Firebase'
+import { Button, TextField, InputLabel, Select, MenuItem} from '@material-ui/core'
 import Alerta from "../Alert"
 
 import './style.css'
+import { Alert } from '@material-ui/lab'
 
-var markEnabled
-var markObject
-
-function addMarker(marker){
-	if(markEnabled === true) {
-		markEnabled = !markEnabled
-		const markersRef = firebase.database().ref('markers');
-		markersRef.push(marker)
-	}
-}
+//const AlertContext = React.createContext(null)
 
 function Form (props){
 	const [alert, openAlert] = React.useState(false)
+	const [submitter, setSubmitter] = React.useState(false)
 
 
   function handleChange(buttonName){
@@ -27,41 +19,52 @@ function Form (props){
 	}  
 	else if(buttonName === "Marcar")
 	{
-		
+
 	}
 	else if(buttonName === "Criar")
 	{
+		
 		openAlert(true)
-		markEnabled = !markEnabled
+		//markEnabled = !markEnabled
 	}
 
-  }
-  function handleResponse(value) {
-		
-		
-  }
+	}
+	 
+
+	function handleSubmit(event) {
+		if(submitter === true) {
+			setSubmitter(false)
+			props.event(false)
+
+			console.log("ASASA")
+			
+		} else {
+			openAlert(true)
+			event.preventDefault()
+		}
+	}
 
 
   return (
     <>
-	{alert && <Alerta textoCaixa="Você tem certeza que deseja marcar este evento neste local?" 
-	tituloCaixa="Verifique"
-	response={handleResponse}
-	evento={openAlert}/>}
-
+	{alert && 
+		<Alerta textoCaixa="Você tem certeza que deseja marcar este evento neste local?" 
+		tituloCaixa="Verifique"
+		response={setSubmitter}
+		evento={openAlert}/>}
+	{submitter && handleSubmit()}
 	<Slide direction="left" mountOnEnter unmountOnExit className="containerForm"  in={props.display} >
-		<form onSubmit={()=>{}} >
-        
-      <div>
-        <label class="titleForm">
-          Quer avisar sobre algum evento?
-        </label>
-      </div>
-      <div>
-        <label class="textForm">
-          Esta área é destinada para que os usuários possam compartilhar sobre eventos nas proximidades.
-        </label>
-      </div>
+		<form onSubmit={handleSubmit} >
+		<div>
+			<label class="titleForm">
+			Quer avisar sobre algum evento?
+			</label>
+		</div>
+		<div>
+			<label class="textForm">
+			Esta área é destinada para que os usuários possam compartilhar sobre eventos nas proximidades.
+			</label>
+		</div>
       <hr class="linhaDivisoria"></hr>
       <div>
 		  <FormControl className="formControl">
@@ -87,7 +90,7 @@ function Form (props){
       </div>
 
       <div class="containerButtonForm" >
-        <Button type="submit" class="buttonCriar"  onClick={()=>handleChange("Criar")}>CRIAR</Button>
+        <Button  type="submit" class="buttonCriar">CRIAR</Button>
         <Button class="buttonFechar" onClick={()=>handleChange("Fechar")}>FECHAR</Button>
       </div>    
 
@@ -100,4 +103,3 @@ function Form (props){
   
 
 export default Form
-export {addMarker}

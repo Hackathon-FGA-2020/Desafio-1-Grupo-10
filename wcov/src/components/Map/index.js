@@ -1,53 +1,46 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet'
-import firebase from '../Firebase'
 
-
-import {addMarker} from '../Form'
 import CardInfo from '../CardInfo'
 import { iconFarmacia } from '../../Icon'
-import {removeMarker, getMarker} from '../../services/markerService'
-
+import MarkersService from '../../services/MarkersService'
 
 import './style.css'
 import 'leaflet/dist/leaflet.css'
 
 function MapContainer(){
-	const markersRef = firebase.database()
-	const [markers, setMarkers] = useState([])
 
+	const marker = new MarkersService()
 
-useEffect(  () => {
-	const newerState = getMarker()
-		markersRef.ref('markers').on('value', async (snapshot) => {	
-			let markVals = await snapshot.val()
-			let newState = []
-			for (let marker in markVals) {
-				newState.push({
-					id: marker,
-					iconKind: markVals[marker].iconKind,
-					coords: markVals[marker].coords
-				})
-			}
-		setMarkers(newState)
-		console.log(newState)
+	
+	console.log( localStorage.getItem('@position') )
+	console.log(localStorage.getItem('@createConfirm'))
+	
 
+	const [markers, setMarkers] = useState([{
+		id: "A",
+		coords: [50,50]
+	}])
+
+	
+	useEffect(() => {
+		marker.get().then( response =>{
+			setMarkers(response)
 		})
-		//newerState.map()
-		console.log(newerState)
-	},[markersRef])
+
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	},[])
 
 
 	function makeMarker (e) {
-			const {lat, lng} = e.latlng
-			addMarker({
-				iconKind: "NULL",
-				coords: [lat,lng]
-			})
-		}
+		const {lat, lng} = e.latlng
+	
+		localStorage.setItem('@position',[lat, lng])
+
+	}
 
 	function deleteMarker(markerId){
-		removeMarker(markerId)
+		marker.delete(markerId)
 	}
 
 
@@ -65,16 +58,16 @@ useEffect(  () => {
 				/>
 				
 				{ markers.map((currentMark) => ( 
-						
-						<Marker key={currentMark.id} position={currentMark.coords} icon={iconFarmacia}>
-							<Popup onClose={() => deleteMarker(currentMark.id)} >
-								<CardInfo/>
-							</Popup>				
-						</Marker>
-					
+					<Marker key={currentMark.id} position={currentMark.coords} icon={iconFarmacia}>
+						<Popup onClose={() => deleteMarker(currentMark.id)} >
+							<CardInfo/>
+						</Popup>				
+					</Marker>
 					))
 				}
+				
 			</Map>
+		
 		</>
 	)
 
