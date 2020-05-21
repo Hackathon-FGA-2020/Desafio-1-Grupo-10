@@ -1,15 +1,29 @@
 .titleAbout{
-    color : #747474;
-    font-size:  38px;
-    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+    margin-bottom: 30px ;
 }
 
 .textAbout{
-    color : #303030;
-    font-size: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
     text-align: justify;
+    align-items: center;
+    color: #555151;
+    margin-bottom: 10px;
+}
 
-}.containerAbout{
+.containerAbout{
 
     display: flex;
     margin: 40px auto ; 
