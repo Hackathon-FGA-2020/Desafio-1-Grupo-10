@@ -14,7 +14,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Águas Claras/Areal</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
                 <p className = "text"> UBS 1 - Endereço: QS 05 LOTE 24 AV. AREAL - PROXIMO UNIV CATOLI</p>
                 <p className = "text"> Horário de Funcionamento: das 7h às 22h de segunda a sexta-feira</p>
@@ -35,7 +35,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Asa Norte</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+            
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: SGAN 905 modulo D</p>
@@ -63,7 +63,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Asa Sul</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: SGAS 612 - Lotes 38/39 CEP: 70200-700</p>
@@ -79,7 +79,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Brazlândia</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: EQ 6/8 SETOR NORTE ÁREA ESPECIAL 3</p>
@@ -127,7 +127,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Candangolândia</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: AE 05/07-Área Especial </p>
@@ -157,7 +157,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Cruzeiro</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: SHCE/SUL - Quadra 611 Lote  01 - Cruzeiro Novo</p>
@@ -177,7 +177,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Fercal</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: DF 150 KM 12 Rua 9 Lote 02, Fercal Oeste, Engenho Velho</p>
@@ -198,7 +198,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Gama</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -210,7 +210,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Guará</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: QE 06, lote C, AE S/N-Guará I</p>
@@ -243,7 +243,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Itapoã</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: QD 378 AE DEL LAGO - ITAPOÃ PROX. ESCOLA ZILDA ARNS</p>
@@ -267,7 +267,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Lago Norte</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: SHIN QI 03 Área Especial</p>
@@ -304,7 +304,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Paranoá</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -316,7 +316,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Park Way</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: Área Especial nº 01-Vargem Bonita - EQ 01NB - SIAB 429</p>
@@ -333,7 +333,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Planaltina</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -358,7 +358,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Riacho Fundo I</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: QN 07 AREA ESPECIAL 09</p>
@@ -378,7 +378,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Riacho Fundo II</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: QC 06 Conj. 16-Área Especial-RF II</p>
@@ -423,7 +423,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Santa Maria</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -448,7 +448,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >SCIA/Estrutural</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: AREA ESPECIAL 02 AVENIDA CENTRAL CENTRO DE SAUDE </p>
@@ -468,7 +468,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >SIA</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -480,7 +480,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Sobradinho I</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -505,7 +505,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Taguatinga</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
             </div>
         </>
@@ -517,7 +517,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Varjão</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: Vila Varjão Quadra 05 conj. A lt. 17 - Área Especial - Varjão do Torto </p>
@@ -534,7 +534,7 @@ function RAs (props){
             <Header/>
             <div class ="container"> 
                 <h1 className="title" >Vicente Pires</h1> 
-                <h2 className="subtitle" >UPA 24h</h2>
+
                 <h2 className="subtitle" >Unidade Básica de Saúde</h2>
 
                 <p className = "text"> UBS 1 - Endereço: RUA 4C CHAARA 12 - COLONIA AGRICOLA SAMAMBAIA </p>

@@ -17,8 +17,8 @@ function Atendimentos (){
 
     <div class ="container">
 
-      <h1 className="title" >Unidades de Atendimento </h1>
-      <p className = "text"> Aqui você encontra todos os locais de atendimento separado por cidades. Clicando em uma cidade você terá acesso a uma lista de Unidades Básica de Atendimento (UBS) e UPAs dispoíveis naquela região.</p>
+      <h1 className ="title" >Unidades de Atendimento </h1>
+      <p className = "text"> Aqui você encontra todos os locais de atendimento separado por cidades. Clicando em uma cidade você terá acesso a uma lista de Unidades Básica de Saúde (UBS) e Unidades Pronto Atendimento (UPAs) dispoíveis naquela região.</p>
 
       <Grid container noGutters="true" className = "grade">
 
