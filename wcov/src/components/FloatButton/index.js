@@ -30,7 +30,7 @@ const options = [
 
 function FloatButton(props){
   
-  const [openOp, setOpenOp] = useState(false);
+  //const [openOp, setOpenOp] = useState(false);
   const [openForm, setOpenForm] = useState(false);
 
   const openDial = () => {
@@ -47,14 +47,14 @@ function FloatButton(props){
 
   return (
   <>
-   <Form display={openForm} event={setOpenForm}/>
+   <Form display={openForm} event={setOpenForm} mydummy={props.mydummy}/>
     <div className="floatButtonContainer" >
 	  <SpeedDial
       ariaLabel="Map Options"
       FabProps={{style: styles}}
       icon={<SpeedDialIcon openIcon={<EditIcon />} />}
       onClick={openDial}
-      open={openOp}
+      open={false}
     >
       {options.map((option) => (
         <SpeedDialAction

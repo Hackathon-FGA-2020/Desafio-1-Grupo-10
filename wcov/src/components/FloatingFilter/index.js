@@ -4,9 +4,10 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import Farmacia from '../../assets/Farmacia.png'
-import Hospital from '../../assets/Hospital.png'
-import UPA from '../../assets/UPA.png'
+import Farmacia from '../../assets/Mapa/Farmacia.svg'
+import Hospital from '../../assets/Mapa/Hospital.svg'
+import UPA from '../../assets/Mapa/UPA.svg'
+import Eventos from '../../assets/Mapa/Eventos.svg'
 import './style.css'
 
 //#TODO: limitar movimento para abaixo do mapa
@@ -17,7 +18,7 @@ function FloatingFilter(props){
         farmaciaShow: false,
         hospitalShow: false,
         UPAShow: false,
-        eventosShow: false,
+        eventosShow: true,
     });
 
 
@@ -42,7 +43,7 @@ function FloatingFilter(props){
                             <div className="containerCheckboxes">
 
                                 <FormControlLabel
-                                control={<Checkbox  name="farmaciaShow" onChange={handleChange}/>}
+                                control={<Checkbox  name="farmaciaShow" onChange={handleChange} checked={state.farmaciaShow}/>}
                                 label="Farmácias"
                                 labelPlacement="end"
                                 />
@@ -52,30 +53,33 @@ function FloatingFilter(props){
 
                             <div className="containerCheckboxes">
                                 <FormControlLabel
-                                control={<Checkbox  name="hospitalShow" onChange={handleChange}/>}
+                                control={<Checkbox  name="hospitalShow" onChange={handleChange} checked={state.hospitalShow} />}
                                 label="Hospitais"
                                 labelPlacement="end"
                                 />
                                      
-                                <img src={Hospital} className="iconHospital" alt="Hospital" />
+                                <img src={Hospital} className="iconHospital" alt="Hospital"/>
                             </div>
 
                             <div className="containerCheckboxes">
                                 <FormControlLabel
-                                control={<Checkbox  name="UPAShow" onChange={handleChange}/>}
+                                control={<Checkbox  name="UPAShow" onChange={handleChange} checked={state.UPAShow} />}
                                 label="UPAs"
                                 labelPlacement="end"
                                 />
                             
-                            <img src={UPA}  className="iconUPA" alt="UPA" />
+                                <img src={UPA}  className="iconUPA" alt="UPA" />
                             </div>
 
-                            <div>
+                            <div className="containerCheckboxes">
                                 <FormControlLabel
-                                control={<Checkbox  name="eventosShow" onChange={handleChange}/>}
+                                control={<Checkbox  name="eventosShow" onChange={handleChange} checked={state.eventosShow} />}
                                 label="Eventos"
                                 labelPlacement="end"
                                 />
+                                
+                                <img src={Eventos}   className="iconEventos" alt="Eventos" />
+                                
                             </div>
                         </FormGroup>
                     </FormControl>

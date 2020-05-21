@@ -83,7 +83,7 @@ function Cuidados() {
           
           <div className="descriptionCuidados" >
             <p>
-              Ao tossir ou espirrar cubra o nariz e a boca com o <strong style={{color:"#E91E63"}} >braço</strong>.
+              Ao tossir ou espirrar cubra o nariz e a boca com o <strong style={{color:"#E91E63"}} >braço </strong> ou um <strong style={{color:"#E91E63"}} >lenço</strong>, depois jogue o lenço no lixo e lave bem as mãos.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ function Cuidados() {
             <img src={socialDistancing} alt="Distância" />
 
           <p className="descriptionCuidados">
-              Em eventos abertos recomenda-se a distância mínima de dois entre pessoas. Evite apertos de mão, abraços e beijos.
+              Em eventos abertos recomenda-se a distância mínima de dois metros entre pessoas. Evite apertos de mão, abraços e beijos.
             </p>
 
           </div>
@@ -106,7 +106,7 @@ function Cuidados() {
           <div className="containerContentCuidados" >
 
             <p className="descriptionCuidados">
-              Se possível fique em casa e saia somente se for necessário.
+              Se possível fique em casa e saia somente se for necessário. Se for sair use máscara.
             </p>
 
             <img src={stayHome} alt="Ficar em casa" />

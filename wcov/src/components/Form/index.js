@@ -6,7 +6,7 @@ import MarkersService from '../../services/MarkersService'
 import './style.css'
 
 function Form (props){
-	var message = []
+	const previousCheckRef = React.useRef(props.mydummy)
 	const marker = new MarkersService()
 	const [alert, openAlert] = React.useState(false)
 	const [submitter, setSubmitter] = React.useState(false)
@@ -19,59 +19,73 @@ function Form (props){
 		style: "buttonCriarDisabled"})
 
 
-  function handleChange(buttonName) {
-	if(buttonName === "Fechar") {
-		props.event(false)
-	}  
-	else if(buttonName === "Marcar") {
-		localStorage.setItem('@createConfirm', true)
-		handleButtonsCheck()
-	}
-	else if(buttonName === "Criar") {
-		openAlert(true)
-	} else {
-	if(buttonName===null) {
-		setMarcarStyle({
-			disabled:true,
-			style:"buttonMarcarnoMapaDisabled"})
-		setCriarStyle({
-			disabled:true,
-			textState:false,
-			style:"buttonCriarDisabled"})
-
-			localStorage.setItem('@createConfirm', false)
-	} else {
-		setMarcarStyle({
-			disabled:false,
-			style:"buttonMarcarnoMapa"})
-		handleButtonsCheck()
-		switch(buttonName.target.value) {
-			case 'mascara':
-				localStorage.setItem('@selectValue', "pharm");
-				break;
-			default:
+  	function handleChange(buttonName) {
+		if(buttonName === "Fechar") {
+			props.event(false)
+		}  
+		else if(buttonName === "Marcar") {
+			localStorage.setItem('@createConfirm', true)
+			handleButtonsCheck()
 		}
+		else if(buttonName === "Criar") {
+			openAlert(true)
+		} else {
+		if(buttonName===null) {
+			setMarcarStyle({
+				disabled:true,
+				style:"buttonMarcarnoMapaDisabled"})
+			setCriarStyle({
+				disabled:true,
+				textState:false,
+				style:"buttonCriarDisabled"})
 
-	}
-	}
-  }
-	 
+				localStorage.setItem('@createConfirm', false)
+				localStorage.setItem('@mapConfirm', false)
+		} else {
+			setMarcarStyle({
+				disabled:false,
+				style:"buttonMarcarnoMapa"})
+			handleButtonsCheck()
+			switch(buttonName.target.value) {
+				case 'mascara':
+					localStorage.setItem('@selectValue', "mascara");
+					break;
+				default:
+					localStorage.setItem('@selectValue', "event");
+
+			}
+
+		}
+		}
+	  }
+	  
+	React.useEffect(() => {
+		if(previousCheckRef.current !== props.mydummy) {
+			if((localStorage.getItem('@mapConfirm')) === 'true'){
+				handleButtonsCheck()
+			}
+			previousCheckRef.current = props.mydummy
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	},[props.mydummy])
 
 	function handleSubmit(event) {
 		if(submitter === true) {
-			setSubmitter(false)
-			localStorage.setItem('@createConfirm', false)
 			props.event(false)
-
+			localStorage.setItem('@createConfirm', false)
+			localStorage.setItem('@mapConfirm', false)
+			setSubmitter(false)
 			marker.post({
-				iconKind: localStorage.getItem('@selectValue'),
-				title: localStorage.getItem('@selectValue'),
-				description: message,
+				icon: localStorage.getItem('@selectValue'),
+				name: localStorage.getItem('@selectValue'),
+				description: localStorage.getItem('@formsMessage'),
 				coords: JSON.parse(localStorage.getItem('@position')),
 				like: 0,
 				dislike:0,
 				create_at: Date.now(),
 			})
+			localStorage.setItem('@formsMessage', '')
+			
 		} else {
 			openAlert(true)
 			event.preventDefault()
@@ -91,7 +105,7 @@ function Form (props){
 				style:"buttonCriarDisabled"})
 			handleButtonsCheck()
 		}
-		message = e.target.value
+		localStorage.setItem('@formsMessage', e.target.value)
 	}
 
 	function handleButtonsCheck() {
@@ -104,14 +118,15 @@ function Form (props){
 	}
 
   return (
-    <>
+	<>
 	{alert && 
 		<Alerta textoCaixa="Você tem certeza que deseja marcar este evento neste local?" 
 		tituloCaixa="Verifique"
 		response={setSubmitter}
 		evento={openAlert}/>}
 	{submitter && handleSubmit()}
-	<Slide direction="left" mountOnEnter unmountOnExit  className="containerForm" onExited={() => handleChange(null)}  in={props.display} >
+	
+	<Slide  direction="left" mountOnEnter unmountOnExit  className="containerForm" onExited={() => handleChange(null)}  in={props.display}>
 		<form onSubmit={handleSubmit} >
 		<div>
 			<label class="titleForm">
@@ -126,7 +141,7 @@ function Form (props){
       <hr class="linhaDivisoria"></hr>
       <div>
 		  <FormControl className="formControl">
-			<InputLabel id="inital">Selecione um evento</InputLabel>
+			<InputLabel id="inital" >Selecione um evento</InputLabel>
 			<Select
 				labelId="initial"
 				id="inital-2"
@@ -139,7 +154,14 @@ function Form (props){
 			</Select>
 		  </FormControl>
       <div/>
-			  <TextField label="Descrição" variant="filled" multiline rows={4} className="descricaoBox" onChange={handleText}/>
+			<TextField
+				label="Descrição"
+				variant="filled"
+				multiline
+				rows={4}
+				className="descricaoBox"
+				onChange={handleText} 
+			/>
       </div>
 
       <div>

@@ -8,15 +8,17 @@ class MarkersService {
     this.allMarkers = []
   }
 
-  async get(){
+  async get(route){
     const markersRef = this.firebase.database()
-    await markersRef.ref('markers').once('value', async (snapshot) =>{
+    await markersRef.ref(route).once('value', async (snapshot) =>{
       const markers = snapshot.val()
       let allMarkers = []
       for (let marker in markers) {
 				allMarkers.push({
-					id: marker,
-					icon: markers[marker].iconKind,
+          id: marker,
+          name: markers[marker].name,
+          description: markers[marker].description,
+					icon: markers[marker].icon,
 					coords: markers[marker].coords
 				})
 			}

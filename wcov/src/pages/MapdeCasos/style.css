@@ -1,0 +1,64 @@
+.containerCasos{
+  
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 55vh 25vh;
+  margin: 30px 80px ;
+  grid-gap: 25px;
+
+
+}
+
+.containerMapa{
+
+  background-color: red;
+  border-radius: 15px;
+
+  grid-column-start: 1;
+  grid-column-end: 2; 
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+}
+
+.containerEvolucao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: orange;
+  border-radius: 15px;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+
+
+.containerDados{
+
+  border-radius: 15px;
+  background-color: blue;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+
+.total{
+
+}
+
+.trackCasos{ 
+
+}

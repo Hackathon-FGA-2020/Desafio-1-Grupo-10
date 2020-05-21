@@ -1,15 +1,18 @@
 import React from 'react';
 import Header from '../../components/Header'
 import MapContainer from '../../components/Map'
-import FloatButton from '../../components/FloatButton'
+
 
 function Home(){
+
+  React.useEffect(() => {
+    localStorage.clear()
+  },[])
 
   return(
     <>
       <Header/>
       <MapContainer/>
-      <FloatButton/>
     </>
   )
 }

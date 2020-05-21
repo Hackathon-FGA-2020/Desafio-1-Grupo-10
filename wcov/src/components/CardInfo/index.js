@@ -1,24 +1,54 @@
 import React from 'react'
 import { Divider } from '@material-ui/core'
+import './style.css'
 
-import {useStyles} from './styles'
-function CardInfo (){
+//#TODO: Descrição ao invés de endereço no caso de defaultmarkers, incluir likes e dislikes
 
-  const classes = useStyles()
+function CardInfo ({cardType, titleCard, descriptionCard}){
+
+  function DisplayName(titleCard){
+    switch(titleCard) {
+      case 'pharm':
+        console.log("Farmácia")
+        return "Farmácia"
+      case 'hosp':
+        console.log("Hospital")
+        return "Hospital"
+      case 'upa':
+        console.log("UPA - Unidade de Pronto Atendimento")
+        return "UPA - Unidade de Pronto Atendimento"
+      case 'mascara':
+        console.log("Distribuição de máscaras")
+        break;
+      default:
+        console.log(titleCard)
+  
+    }
+  }
+
+  function DisplayDescription(cardType){
+    if (cardType === "event" || cardType === "mascara") {
+      return "Descrição"
+    }
+    else {
+      return "Endereço"
+    }
+  }
 
   return (
         <>
-        <h1 className={classes.title} >Título</h1>
-        <Divider />
-        <p className={classes.description} >
-          <strong>Descrição: </strong>
-          Is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
+          <div >
+            <h1 className= "titleCardInfo" >
+              {DisplayName(titleCard)}
+            </h1>
+            <Divider />
+            <p className="textCardInfo" >
+              <strong>{DisplayDescription(cardType)}  </strong>
+              {descriptionCard}
+            </p>
+          </div>
         </>
   )
 }
-
 
 export default CardInfo;
