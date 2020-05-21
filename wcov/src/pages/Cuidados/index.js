@@ -42,12 +42,12 @@ function Cuidados() {
             </ul>
           </div>
 
-          <img src={transmissao} style={{height:500, width:600}} alt="Transmissão" />
+          <img src={transmissao} style={{height:500, width:600}} alt="Duas pessoas se cumprimentando com as mãos, com uma imagem ampliada mostrando os micróbios passando de uma pessoa pra outra." />
         </div>
 
 
         <div className="containerContentCuidados" >
-          <img src={distancing} alt="Distância social" />
+          <img src={distancing} alt="Duas pessoas com máscara mantendo uma distância segura" />
           <div className="atentionCuidados" >
           <p>
               <strong>Atenção: </strong>
@@ -69,7 +69,7 @@ function Cuidados() {
 
           <div className="containerContentCuidados" >
 
-            <img src={washingHands} alt="Lavar as mãos" />
+            <img src={washingHands} alt="Uma pessoa lavando as mãos" />
 
             <p className="descriptionCuidados">
               Lave as mãos frequentemente coma aguá e sabão por  pelo menos 20 segundos. Use antisséptico de mãos à base de álcool gel 70%.
