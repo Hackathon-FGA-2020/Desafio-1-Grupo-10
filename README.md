@@ -50,7 +50,8 @@ npm install
 npm start
 ```
 
-Depois de executar o último comando, a execução do programa deve acontecer semelhante ao gif abaixo. <!-- inserir gif -->
+A aplicação pode ser visualizada em: <https://wcov-70df7.web.app/> 
+Apenas a versão web está finalizada.
 
 ## Tecnologias usadas
 
@@ -73,6 +74,14 @@ Depois de executar o último comando, a execução do programa deve acontecer se
 * **Gabriel Delolmo** - [delanoerhardt](https://github.com/delanoerhardt)
 * **Maria Claudia** - [MariaClaudia1328](https://github.com/MariaClaudia1328)
 * **Paulo Henrique** - [paulohenriquerosa](https://github.com/paulohenriquerosa)
+
+## Projetos Futuros
+
+* Finalização da versão mobile
+* Implementação do aplicativo
+* Sistema de autenticação de usuário
+* Possibilidade de fazer denúncias
+
 
 ## Licença
 
