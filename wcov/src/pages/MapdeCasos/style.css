@@ -1,120 +1,31 @@
 .containerCasos{
-  
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-  grid-template-rows: 55vh 25vh;
-  margin: 30px 80px ;
-  grid-gap: 25px;
-
-
-}
-
-
-.containerMapa{
-
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column-start: 1;
-  grid-column-end: 2; 
-  grid-row-start: 1;
-  grid-row-end: 2;
-  
-}
-
-.containerMapa > img{
-
-  width: 75%;
-
-}
-
-.containerEvolucao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: orange;
-  border-radius: 15px;
-
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  
-}
-
-.containerHuman{
-
-
-}
-
-.containerImagemMulher > img{
-
-  width: 75%;
-
-}
-
-.containerHomemEMulher {
-    display: block;
-    justify-content: space-around;
-}
-
-.containerDados{
-
-  border-radius: 15px;
-  background-color: blue;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
 
   display: flex;
-  flex-direction: column;
 
-  justify-content: space-around;
-  align-items: center;
-  
 
+
+} 
+
+.containerRegião{
+  flex:1.5;
+  text-align: center;
+  margin: 20px 15px ;
 }
 
-.chartPieTitle{
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  margin-bottom: 30px ;
-  justify-content: center
-
+.containerRegião > h1{
+  margin-bottom: 20px;
 }
 
 
-.totalDeCasos{
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 60px;
-  display: flex;
-  align-items: center;
-  color: #455A64;
-  margin-bottom: 5px ;
-  justify-content: center
-
+.containerTotais{
+  flex:1;
+  background-color: gold;
+  text-align: center;
+  margin: 20px 15px ;
 }
 
-.total{
-
-
-}
-
-.trackCasos{ 
+.containerTable{  
+  height: 490px;
+  overflow: auto;
 
 }

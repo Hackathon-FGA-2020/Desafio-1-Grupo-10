@@ -1,9 +1,8 @@
-import React from 'react'
-//import testData from './testData.csv'
-import {parse} from 'csv'
+// import React from 'react'
+//import testData from './testDimport {parse} from 'csv'
 //import {express, request} from 'express'
 
-function Proxy() {
+// function Proxy() {
 /*
 	console.log("A")
 	const app = express();
@@ -27,9 +26,9 @@ function Proxy() {
 	const PORT = process.env.PORT || 3000;
 	app.listen(PORT, () => console.log(`listening on ${PORT}`));
 	*/
-}
+// }
 
-async function getNewCases() {
+// async function getNewCases() {
 	/*const fetching = await fetch('https://cors-anywhere.herokuapp.com/https://filebin.net/hv5hy1sz4roxqo31/testData.csv?t=7m2d4m82')
 	const testData = fetching.blob()
 	var casoList = [];
@@ -65,6 +64,6 @@ async function getNewCases() {
 			console.log(JSON.stringify(casoList))
 		)
 	})*/
-}
+// }
 
-export default Proxy
+// export default Proxy
