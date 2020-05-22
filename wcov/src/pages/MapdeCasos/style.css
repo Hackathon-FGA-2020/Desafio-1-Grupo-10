@@ -1,31 +1,60 @@
 .containerCasos{
 
   display: flex;
-
-
-
 } 
 
 .containerRegião{
   flex:1.5;
   text-align: center;
-  margin: 20px 15px ;
+  margin: 10px 5px ;
 }
 
 .containerRegião > h1{
   margin-bottom: 20px;
+  color: #E91E63;
 }
 
 
 .containerTotais{
+  display: flex;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
   flex:1;
-  background-color: gold;
   text-align: center;
   margin: 20px 15px ;
 }
 
-.containerTable{  
+.containerTotais > h1 > strong{
+  color: #E91E63;
+}
+
+.containerTable{
   height: 490px;
   overflow: auto;
 
 }
+
+.containerChartPie{
+  margin-top:10px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.containerChartBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.containerChartBar > img {
+  width: 128px;
+}
+.containerChartBar > img + img {
+  width: 114px;
+}
+

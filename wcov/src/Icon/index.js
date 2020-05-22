@@ -34,7 +34,7 @@ const iconUPA = new L.Icon({
     shadowUrl: null,
     shadowSize: null,
     shadowAnchor: null,
-    iconSize: new L.Point(48, 48),
+    iconSize: new L.Point(58, 58),
     className: 'upa-icon'
 });
 

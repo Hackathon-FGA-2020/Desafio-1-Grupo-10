@@ -29,14 +29,14 @@ function Cuidados() {
           <div>
 
             <p className="initDescriptionCuidados" style={{marginBottom: 25}} >
-              Ela costuma ocorrer através do contato das mucosa com o ar contaminado com secreções e/ou por contato pessoal, como:
+              A transmissão costuma ocorrer através do contato das mucosas com o ar contaminado com secreções e/ou por contato pessoal, como:
           </p>
 
             <ul className="listCuidados" >
-              <li>Beijo, abraços e aperto de mão</li>
+              <li>Beijo, abraço e aperto de mão</li>
               <li>Contato com objetos e superfícies contaminadas</li>
               <li>Gotículas de saliva</li>
-              <li>Epirro</li>
+              <li>Espirro</li>
               <li>Catarro/Corisa</li>
               <li>Tosse</li>
             </ul>
@@ -61,7 +61,7 @@ function Cuidados() {
       
 
 
-          <h1 className="TitleCuidados" >Como se previnir?</h1>
+          <h1 className="TitleCuidados" >Como se prevenir?</h1>
 
 
         <div>
@@ -72,7 +72,7 @@ function Cuidados() {
             <img src={washingHands} alt="Uma pessoa lavando as mãos" />
 
             <p className="descriptionCuidados">
-              Lave as mãos frequentemente coma aguá e sabão por  pelo menos 20 segundos. Use antisséptico de mãos à base de álcool gel 70%.
+              Lave as mãos frequentemente com a água e sabão por pelo menos 20 segundos. Caso não seja possível, use antisséptico para mãos à base de álcool em gel 70%.
             </p>
 
           </div>
@@ -83,7 +83,7 @@ function Cuidados() {
           
           <div className="descriptionCuidados" >
             <p>
-              Ao tossir ou espirrar cubra o nariz e a boca com o <strong style={{color:"#E91E63"}} >braço </strong> ou um <strong style={{color:"#E91E63"}} >lenço</strong>, depois jogue o lenço no lixo e lave bem as mãos.
+              Ao tossir ou espirrar, cubra o nariz e a boca com o <strong style={{color:"#E91E63"}} >braço </strong> ou um <strong style={{color:"#E91E63"}} >lenço</strong>, depois jogue o lenço no lixo e lave bem as mãos.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ function Cuidados() {
             <img src={socialDistancing} alt="Distância" />
 
           <p className="descriptionCuidados">
-              Em eventos abertos recomenda-se a distância mínima de dois metros entre pessoas. Evite apertos de mão, abraços e beijos.
+              Mesmo em ambientes abertos, recomenda-se a distância mínima de dois metros entre pessoas. Evite apertos de mão, abraços e beijos.
             </p>
 
           </div>
@@ -106,7 +106,7 @@ function Cuidados() {
           <div className="containerContentCuidados" >
 
             <p className="descriptionCuidados">
-              Se possível fique em casa e saia somente se for necessário. Se for sair use máscara.
+              Se possível, fique em casa. Se for necessário sair, use máscara.
             </p>
 
             <img src={stayHome} alt="Ficar em casa" />
@@ -127,7 +127,7 @@ function Cuidados() {
           <div className="containerContentCuidados" >
 
             <p className="descriptionCuidados">
-              Evite tocar os olhos, boca ou nariz antesde higienizar as mãos e não compartilhe objetos pessoais.
+              Evite tocar os olhos, boca ou nariz antes de higienizar as mãos e não compartilhe objetos pessoais.
             </p>
 
             <img src={handWashing} alt="Lavar as mãos" />
@@ -147,7 +147,7 @@ function Cuidados() {
           <div className="containerContentCuidados" >
           <p className="descriptionCuidados">
               O Corona vírus afeta diferentes pessoas de diferentes maneiras.
-              A maioria das pessoas infectadas apresentará sintomas leves a moderados
+              A maioria das pessoas infectadas apresentarão sintomas leves a moderados
               da doença e não precisarão ser hospitalizadas.
               </p>
 
@@ -176,7 +176,7 @@ function Cuidados() {
         </div>
 
 
-          <h1 className="TitleCuidados" >O que fazer em casos de suspeitas</h1>
+          <h1 className="TitleCuidados" >O que fazer em casos de suspeitas?</h1>
 
         <div>
 
@@ -194,7 +194,7 @@ function Cuidados() {
                     Estou com sintomas e tive acesso a pessoas que voltaram de viagem internacional. O que fazer?
                 </p>
                   <p className="answersCuidados" >
-                    Entre em contato com 190, 193 ou 199 e informe sua situação.
+                    Entre em contato com 190, 193 ou 199 e informe sua situação. Esses números também podem ser usados para tirar qualquer dúvida sobre a COVID-19.
                 </p>
 
             </div>

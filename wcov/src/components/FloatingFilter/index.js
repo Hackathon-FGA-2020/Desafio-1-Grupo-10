@@ -16,8 +16,8 @@ function FloatingFilter(props){
 
     const [state, setState] = React.useState({
         farmaciaShow: false,
-        hospitalShow: false,
-        UPAShow: false,
+        hospitalShow: true,
+        UPAShow: true,
         eventosShow: true,
     });
 

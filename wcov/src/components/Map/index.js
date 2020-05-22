@@ -10,6 +10,9 @@ import 'leaflet/dist/leaflet.css'
 
 function MapContainer(props){
 	const [state, setState] = React.useState({
+        farmaciaShow: false,
+        hospitalShow: true,
+        UPAShow: true,
         eventosShow: true,
 	});
 	const [stateLike, setStateLike] = React.useState({

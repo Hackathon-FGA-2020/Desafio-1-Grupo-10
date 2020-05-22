@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header'
-import help from '../../assets/ajuda/help.svg'
+import Help from '../../assets/Ajuda/Help.svg'
 import './style.css'
 
 const agendar = 'https://sistemas.df.gov.br/mteste/'
@@ -31,7 +31,7 @@ function Ajuda(){
 
       
       <div>
-          <img src={help} alt="Ajuda" />
+          <img src={Help} alt="Ajuda" />
       </div>
 
     </div>

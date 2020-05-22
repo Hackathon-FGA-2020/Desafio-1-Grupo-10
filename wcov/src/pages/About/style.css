@@ -4,7 +4,7 @@
     max-width: 1200px;
     background-color: #FFFDFD;
     border-radius: 15px;
-    padding: 60px 40px;
+    padding: 20px 40px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -26,6 +26,8 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    position: relative;
+    z-index: 100;
 
 }
 
@@ -40,7 +42,7 @@
     display: flex;
     align-items: center;
     color: #E91E63;
-    margin-bottom: 30px ;
+    margin-bottom: 10px ;
 }
 
 .textAAbout{
@@ -49,7 +51,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 28px;
     display: flex;
     align-items: center;
@@ -59,14 +61,12 @@
     margin-top: 30px;
 }
 
-
 .textAAboutParticipantes{
     position: relative;
-    z-index: 1;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 17.8342px;
+    font-size: 17px;
     line-height: 21px;
     display: flex;
     align-items: center;
@@ -77,11 +77,11 @@
 .imgBack{
     position: relative;
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 112px;
+    height: 112px;
     align-self: center;
     justify-self: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,7 +94,8 @@
     align-content: center;
     justify-self: center;
     margin-bottom: 30px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
 }
@@ -102,12 +103,15 @@
 .imgBackH{
     position: relative;
     display: block;
-    width: 449px;
-    height: 123px;
+    width: 35%;
+    height: 35%;
     align-self: center;
     justify-self: center;
     margin-bottom: 30px;
-    margin: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
+    z-index: 50;
 }

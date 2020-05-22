@@ -33,7 +33,7 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-      <PieChart width={400} height={200}>
+      <PieChart width={400} height={180}>
         <Pie
           data={data}
           cx={240}

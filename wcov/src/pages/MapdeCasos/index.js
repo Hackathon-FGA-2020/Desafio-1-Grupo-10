@@ -1,17 +1,12 @@
 import React from 'react'
 
-<<<<<<< HEAD
-=======
-import ProgressBar from 'react-bootstrap/ProgressBar'
-import CasosService from '../../services/CasosService'
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
 import Header from '../../components/Header'
-// import ChartPie from '../../components/ChartPie'
-// import ChartBar from '../../components/ChartBar'
-// import ChartComposed from '../../components/ChartComposed'
-// import homem from '../../assets/casos/homem.svg'
-// import mulher from '../../assets/casos/mulher.svg'
-
+import ChartPie from '../../components/Chart/ChartPie'
+import ChartBar from '../../components/Chart/ChartBar'
+// import ChartComposed from '../../components/Chart/ChartComposed'
+import homem from '../../assets/Casos/homem.svg'
+import mulher from '../../assets/Casos/mulher.svg'
+import CasosService from '../../services/CasosService'
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -23,7 +18,6 @@ import Paper from '@material-ui/core/Paper';
 import './style.css'
 
 
-<<<<<<< HEAD
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -46,30 +40,55 @@ const rows = [
 
 ];
 
-=======
 function getPercentages(casos) {
-	var homem=0
-	var mulher = 0
-	casos.forEach((caso) => {
-		(caso.sexo === 'Masculino') ? homem++ : mulher++
-	})
-	for(let caso in casos) {
-			}
-	homem /= (casos.length/100)
-	mulher /= (casos.length/100)
-	return {
-		mal: homem.toFixed(2), 
-		fem: mulher.toFixed(2)}
+  var homem = 0
+  var mulher = 0
+  casos.forEach((caso) => {
+    (caso.sexo === 'Masculino') ? homem++ : mulher++
+  })
+  homem /= (casos.length / 100)
+  mulher /= (casos.length / 100)
+  return {
+    mal: homem.toFixed(2),
+    fem: mulher.toFixed(2)
+  }
 }
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
 
-function Mapeamento (){
-	const casosMan = new CasosService()
-	const [casos, setCasos] = React.useState([])
-	const [percent, setPercent] = React.useState( {
-		mal: 0,
-		fem: 0})
-	
+function getNumber(casos) {
+  var newState = []
+  casos.forEach((caso) => {
+    console.log(caso.regiao)
+    /*if(newState.some(newState => newState.RA === caso.regiao)) {
+    } else {
+      console.log(caso.regiao)
+      newState.push(
+        {
+          RA: caso.regiao,
+          obitos: 0,
+          recuperados: 0,
+          totais: 0,
+          grave: 0,
+          moderados: 0,
+          leves: 0})
+          
+        }
+      //var index = newState.findIndex(newState => newState.RA === caso.regiao)
+      //newState[index][caso.state]++
+      //console.log(caso)
+      */
+    })
+    
+}
+
+
+function Mapeamento() {
+  const casosMan = new CasosService()
+  const [casos, setCasos] = React.useState([])
+  const [percent, setPercent] = React.useState({
+    mal: 0,
+    fem: 0
+  })
+
 	React.useEffect(() => {
 		async function fetchCasos() {
 			var dum
@@ -77,119 +96,82 @@ function Mapeamento (){
 				setCasos(response)
 				dum = response
 			})
-			setPercent(getPercentages(dum))
+      setPercent(getPercentages(dum))
+      getNumber(casos)
 		}
-		fetchCasos()
+    fetchCasos()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
 	},[])
 
   return (
     <>
-      <Header/>
-<<<<<<< HEAD
-      
-      <div className="containerCasos" >
-=======
+      <Header />
+
       <div className="containerCasos" >
 
-            <div style={{ width: 400 }} >
-              
-             <ProgressBar now={50} />
-          
-          </div>
 
-
-
-          <div className="containerEvolucao" >
-
-          <ChartComposed listaCasos={casos}/>
-
-          </div>
-
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
-        
-        
-        <div className="containerRegião" > 
+        <div className="containerRegião" >
 
           <h1>Casos por Região</h1>
           <TableContainer className="containerTable" component={Paper}>
-              <Table stickyHeader aria-label="simple table">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Região</TableCell>
-                    <TableCell align="center">Número de Casos</TableCell>
-                    <TableCell align="center">Taxa de Crescimento</TableCell>
-                  </TableRow>
-                </TableHead>
+            <Table stickyHeader aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Região</TableCell>
+                  <TableCell align="center">Óbitos</TableCell>
+                  <TableCell align="center">Recuperados</TableCell>
+                  <TableCell align="center">Total</TableCell>
+                </TableRow>
+              </TableHead>
 
-                <TableBody className="containerTableBody" >
-                  {rows.map((row) => (
-                    <TableRow key={row.name}>
-                      <TableCell component="th" scope="row">
-                        {row.name}
-                      </TableCell>
-                      <TableCell align="center">{row.fat}</TableCell>
-                      <TableCell align="center">{row.carbs}</TableCell>
-                  
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+              <TableBody >
+                {casos.map((caso) => (
+                  <TableRow key={caso.regiao}>
+                    <TableCell component="th" scope="row">
+                      {caso.regiao}
+                    </TableCell>
+                    <TableCell align="center">{caso.estado}</TableCell>
+                    <TableCell align="center">{caso.estado}</TableCell>
+                    <TableCell align="center">{caso.estado}</TableCell>
+
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </TableContainer>
 
-<<<<<<< HEAD
         </div>
-=======
-            <div className="total" >
-              
-              <p class="chartPieTitle"> Casos</p>
-              <p class="totalDeCasos"> {casos.length}</p>
-              <ChartPie listaCasos={casos}/>
-              
-            </div>
-
-            <div className="conteinerHomemEMulher">
-
-              <div className="conteinerHuman">
-                
-                <img src={homem} alt="Homem" />
-                <p class="totalDeCasos"> {percent.mal}%</p>
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
 
 
-<<<<<<< HEAD
-          <div className="containerTotais" >
-=======
-              <div className="conteinerHuman">
-                <div class="conteinerImagemMulher">
-                  <img src={mulher} alt="Mulher" /> 
-                </div>                  
-                
-                <p class="totalDeCasos"> {percent.fem}%</p>
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
+        <div className="containerTotais" >
 
-            <h1>Casos: 5271 </h1>
-
-            
-
-<<<<<<< HEAD
-            <div className="containerChartPie" >
-=======
-            <ChartBar listaCasos={casos}/>
->>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
-
-            </div>
+          <h1><strong>Casos</strong></h1>
+          {casos.length}
 
 
-            <div className="containerChartBar" >
 
-            </div>
+          <div className="containerChartPie" >
+            <ChartPie listaCasos={casos}/>
+          </div>
+
+
+          <div className="containerChartBar" >
+            <strong>Nº</strong>
+            <img src={homem}  alt="Homem"/>
+            <img src={mulher} alt="Mulher" />
+            <strong>Nº</strong>
 
           </div>
-    
+          <div  >
+            <ChartBar listaCasos={casos}/>
+          </div>
+
         </div>
+
+      </div>
     </>
-    )
-  }
+  )
+}
 
 export default Mapeamento
 
