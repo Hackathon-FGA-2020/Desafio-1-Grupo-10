@@ -32,7 +32,7 @@ A instalação do software pode ser feita através do botão de *"Clone or Downl
 git clone https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10.git
 
 # Vá ao repositório 'wcov'
-cd wcov
+cd Desafio-1-Grupo-10
 ```
 
 Após chegar no repositório, a execução do programa pode ser efetuada.
