@@ -66,7 +66,7 @@ Depois de executar o último comando, a execução do programa deve acontecer se
 
 * **André Dornelas** - [adornelas](https://github.com/adornelas)
 * **Bianca Boueri** - [BiancaBoueri](https://github.com/BiancaBoueri) 
-* **Caio** - [chaioaaD](https://github.com/chaioaaD)
+* **Caio Albuquerque** - [chaioaaD](https://github.com/chaioaaD)
 * **Evelyn Soares** - [evelynsoares](https://github.com/evelynsoares)
 * **Gabriel Baliza** - [GabrielBaliza](https://github.com/GabrielBaliza)
 * **Gabriel Bismarck** - [gabrielbismarck](https://github.com/gabrielbismarck)
