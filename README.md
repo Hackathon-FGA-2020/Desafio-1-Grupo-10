@@ -51,6 +51,7 @@ npm start
 ```
 
 A aplicação pode ser visualizada em: <https://wcov-70df7.web.app/> 
+
 Apenas a versão web está finalizada.
 
 ## Tecnologias usadas
