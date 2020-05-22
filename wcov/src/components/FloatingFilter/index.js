@@ -26,7 +26,7 @@ function FloatingFilter(props){
         var submit = {...state, [event.target.name]: event.target.checked}
         setState({ ...state, [event.target.name]: event.target.checked });
         props.response(submit);     
-        };
+    };
 
 
     return (
@@ -74,7 +74,7 @@ function FloatingFilter(props){
                             <div className="containerCheckboxes">
                                 <FormControlLabel
                                 control={<Checkbox  name="eventosShow" onChange={handleChange} checked={state.eventosShow} />}
-                                label="Eventos"
+                                label="Ocorrências"
                                 labelPlacement="end"
                                 />
                                 

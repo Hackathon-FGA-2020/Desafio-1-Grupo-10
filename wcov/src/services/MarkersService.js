@@ -14,14 +14,16 @@ class MarkersService {
       const markers = snapshot.val()
       let allMarkers = []
       for (let marker in markers) {
-				allMarkers.push({
+		    allMarkers.push({
           id: marker,
           name: markers[marker].name,
           description: markers[marker].description,
-					icon: markers[marker].icon,
-					coords: markers[marker].coords
-				})
-			}
+          icon: markers[marker].icon,
+          coords: markers[marker].coords,
+          like: markers[marker].like,
+          dislike: markers[marker].dislike
+			  })
+		  }
       this.allMarkers = allMarkers
     })
     return this.allMarkers
@@ -35,7 +37,12 @@ class MarkersService {
 
   post(marker){
     const markersRef = this.firebase.database().ref('markers');
-    markersRef.push(marker)
+	  markersRef.push(marker)
+  }
+
+  update(markerId, liked, disliked){
+    const markersRef = this.firebase.database()
+    markersRef.ref(`/markers/${markerId}`).update({ like: liked, dislike: disliked })
   }
 
 }

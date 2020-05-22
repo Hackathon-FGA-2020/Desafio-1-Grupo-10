@@ -12,6 +12,10 @@ function MapContainer(props){
 	const [state, setState] = React.useState({
         eventosShow: true,
 	});
+	const [stateLike, setStateLike] = React.useState({
+		like: false,
+		dislike:false,
+	});
 	const [dummy, setDummy] = React.useState()
 	const marker = new MarkersService()
 	
@@ -62,6 +66,15 @@ function MapContainer(props){
 		marker.delete(markerId)
 	}
 
+	function updateMarker(markerId, liked, disliked){
+		if (stateLike.like === true) {
+			marker.update(markerId, liked+1, disliked)
+		}
+		if (stateLike.dislike === true){
+			marker.update(markerId, liked, disliked+1)
+		}
+	}
+
 
 	return (
 		<>
@@ -81,10 +94,10 @@ function MapContainer(props){
 					var thisMarker
 					if(state.farmaciaShow === true && currentMark.icon === "pharm"){
 					thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconFarmacia}>
-						<Popup >
+						<Popup onClose={() => updateMarker(currentMark.id)}>
 							<CardInfo
-								titleCard={currentMark.name}
-								descriptionCard={currentMark.description}
+								name={currentMark.name}
+								description={currentMark.description}
 							/>
 						</Popup>				
 					</Marker>)
@@ -93,8 +106,8 @@ function MapContainer(props){
 						thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconHospital}>
 							<Popup >
 								<CardInfo
-									titleCard={currentMark.name}
-									descriptionCard={currentMark.description}
+									name={currentMark.name}
+									description={currentMark.description}
 								/>
 							</Popup>				
 						</Marker>)
@@ -103,19 +116,22 @@ function MapContainer(props){
 						thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconUPA}>
 							<Popup >
 								<CardInfo
-									titleCard={currentMark.name}
-									descriptionCard={currentMark.description}
+									name={currentMark.name}
+									description={currentMark.description}
 								/>
 							</Popup>				
 						</Marker>)
 					}
 					if(state.eventosShow === true && (currentMark.icon === "event" || currentMark.icon === "mascara" || currentMark.icon === "cesta" || currentMark.icon === "outro")){
 						thisMarker = (<Marker dummy={dummy} key={currentMark.id} position={currentMark.coords} icon={iconEvento}>
-							<Popup >
+							<Popup onClose={() => updateMarker(currentMark.id, currentMark.like, currentMark.dislike)}>
 								<CardInfo
-									cardType={currentMark.icon}
-									titleCard={currentMark.name}
-									descriptionCard={currentMark.description}
+									icon={currentMark.icon}
+									name={currentMark.name}
+									description={currentMark.description}
+									likes={currentMark.like}
+									dislikes={currentMark.dislike}
+									response={setStateLike}
 								/>
 							</Popup>				
 						</Marker>)
@@ -124,8 +140,8 @@ function MapContainer(props){
 						thisMarker = (<Marker dummy={dummy} key={currentMark.id} position={currentMark.coords} icon={iconEvento}>
 							<Popup >
 								<CardInfo
-									titleCard={currentMark.name}
-									descriptionCard={currentMark.description}
+									name={currentMark.name}
+									description={currentMark.description}
 								/>
 							</Popup>				
 						</Marker>)

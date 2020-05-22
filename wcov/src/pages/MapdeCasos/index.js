@@ -1,5 +1,5 @@
 import React from 'react'
-import get from '../../api/request'
+//import getNewCases from '../../api/request'
 import Header from '../../components/Header'
 import ChartPie from '../../components/ChartPie'
 import CharBar from '../../components/ChartBar'
@@ -8,11 +8,8 @@ import './style.css'
 
 function Mapeamento (){
 
- 
-
   return (
     <>
-    {console.log(get())}
       <Header/>
       
       
