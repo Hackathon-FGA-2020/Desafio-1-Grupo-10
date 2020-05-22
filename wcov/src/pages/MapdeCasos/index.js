@@ -24,14 +24,19 @@ function Mapeamento (){
       <Header/>
       
       
+      <div>
+
+             <ProgressBar now={50} /> 
+          
+      </div>
 
       <div className="containerCasos" >
 
-            <div style={{ width: 400 }} >
-              
-             <ProgressBar now={50} />
+            <div>
+
+             <ProgressBar now={50} /> 
           
-          </div>
+            </div>
 
 
 
