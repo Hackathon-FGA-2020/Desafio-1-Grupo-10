@@ -81,7 +81,7 @@ function MapContainer(props){
 					var thisMarker
 					if(state.farmaciaShow === true && currentMark.icon === "pharm"){
 					thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconFarmacia}>
-						<Popup onClose={() => deleteMarker(currentMark.id)} >
+						<Popup >
 							<CardInfo
 								titleCard={currentMark.name}
 								descriptionCard={currentMark.description}
@@ -91,7 +91,7 @@ function MapContainer(props){
 					}
 					if(state.hospitalShow === true && currentMark.icon === "hosp"){
 						thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconHospital}>
-							<Popup onClose={() => deleteMarker(currentMark.id)} >
+							<Popup >
 								<CardInfo
 									titleCard={currentMark.name}
 									descriptionCard={currentMark.description}
@@ -101,7 +101,7 @@ function MapContainer(props){
 					}
 					if(state.UPAShow === true && currentMark.icon === "UPA"){
 						thisMarker = (<Marker key={currentMark.id} position={currentMark.coords} icon={iconUPA}>
-							<Popup onClose={() => deleteMarker(currentMark.id)} >
+							<Popup >
 								<CardInfo
 									titleCard={currentMark.name}
 									descriptionCard={currentMark.description}
@@ -109,9 +109,9 @@ function MapContainer(props){
 							</Popup>				
 						</Marker>)
 					}
-					if(state.eventosShow === true && (currentMark.icon === "event" || currentMark.icon === "mascara")){
+					if(state.eventosShow === true && (currentMark.icon === "event" || currentMark.icon === "mascara" || currentMark.icon === "cesta" || currentMark.icon === "outro")){
 						thisMarker = (<Marker dummy={dummy} key={currentMark.id} position={currentMark.coords} icon={iconEvento}>
-							<Popup onClose={() => deleteMarker(currentMark.id)} >
+							<Popup >
 								<CardInfo
 									cardType={currentMark.icon}
 									titleCard={currentMark.name}
@@ -122,7 +122,7 @@ function MapContainer(props){
 					}
 					if(currentMark.id === "default"){
 						thisMarker = (<Marker dummy={dummy} key={currentMark.id} position={currentMark.coords} icon={iconEvento}>
-							<Popup onClose={() => deleteMarker(currentMark.id)} >
+							<Popup >
 								<CardInfo
 									titleCard={currentMark.name}
 									descriptionCard={currentMark.description}

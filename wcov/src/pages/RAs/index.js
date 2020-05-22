@@ -2,15 +2,13 @@ import React from 'react'
 import Header from '../../components/Header'
 import './style.css'
 
-import Medica from '../../assets/Atendimento/health_.svg'
-
 var regiao = 0
 
 function RAs (props){
 
     regiao = props.match.params.id
 
-    if (regiao == 1)
+    if (regiao === 1)
         return (
         <>
             <Header/>
@@ -32,7 +30,7 @@ function RAs (props){
         )
 
 
-    if (regiao == 2)
+    if (regiao === 2)
         return (
         <>
             <Header/>
@@ -60,7 +58,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 3)
+    if (regiao === 3)
         return (
         <>
             <Header/>
@@ -76,7 +74,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 4)
+    if (regiao === 4)
         return (
         <>
             <Header/>
@@ -124,7 +122,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 5)
+    if (regiao === 5)
         return (
         <>
             <Header/>
@@ -140,7 +138,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 6)
+    if (regiao === 6)
         return (
         <>
             <Header/>
@@ -154,7 +152,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 7)
+    if (regiao === 7)
         return (
         <>
             <Header/>
@@ -174,7 +172,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 8)
+    if (regiao === 8)
         return (
         <>
             <Header/>
@@ -195,7 +193,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 9)
+    if (regiao === 9)
         return (
         <>
             <Header/>
@@ -207,7 +205,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 10)
+    if (regiao === 10)
         return (
         <>
             <Header/>
@@ -240,7 +238,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 11)
+    if (regiao === 11)
         return (
         <>
             <Header/>
@@ -264,7 +262,7 @@ function RAs (props){
         </>
         )
         
-    if (regiao == 12)
+    if (regiao === 12)
         return (
         <>
             <Header/>
@@ -280,7 +278,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 13)
+    if (regiao === 13)
         return (
         <>
             <Header/>
@@ -301,7 +299,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 14)
+    if (regiao === 14)
         return (
         <>
             <Header/>
@@ -313,7 +311,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 15)
+    if (regiao === 15)
         return (
         <>
             <Header/>
@@ -330,7 +328,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 16)
+    if (regiao === 16)
         return (
         <>
             <Header/>
@@ -342,7 +340,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 17)
+    if (regiao === 17)
         return (
         <>
             <Header/>
@@ -355,7 +353,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 18)
+    if (regiao === 18)
         return (
         <>
             <Header/>
@@ -375,7 +373,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 19)
+    if (regiao === 19)
         return (
         <>
             <Header/>
@@ -407,7 +405,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 20)
+    if (regiao === 20)
         return (
         <>
             <Header/>
@@ -420,7 +418,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 21)
+    if (regiao === 21)
         return (
         <>
             <Header/>
@@ -432,7 +430,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 22)
+    if (regiao === 22)
         return (
         <>
             <Header/>
@@ -445,7 +443,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 23)
+    if (regiao === 23)
         return (
         <>
             <Header/>
@@ -465,7 +463,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 24)
+    if (regiao === 24)
         return (
         <>
             <Header/>
@@ -477,7 +475,7 @@ function RAs (props){
         </>
         )
         
-    if (regiao == 25)
+    if (regiao === 25)
         return (
         <>
             <Header/>
@@ -489,7 +487,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 26)
+    if (regiao === 26)
         return (
         <>
             <Header/>
@@ -502,7 +500,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 27)
+    if (regiao === 27)
         return (
         <>
             <Header/>
@@ -514,7 +512,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 28)
+    if (regiao === 28)
         return (
         <>
             <Header/>
@@ -531,7 +529,7 @@ function RAs (props){
         </>
         )
 
-    if (regiao == 29)
+    if (regiao === 29)
         return (
         <>
             <Header/>
