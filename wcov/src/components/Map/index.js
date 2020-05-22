@@ -19,7 +19,6 @@ function MapContainer(props){
 	const [dummy, setDummy] = React.useState()
 	const marker = new MarkersService()
 	
-
 	const [markers, setMarkers] = useState([{coords:[55,50]}])
 
 	useEffect(() => {
@@ -67,6 +66,7 @@ function MapContainer(props){
 	}
 
 	function updateMarker(markerId, liked, disliked){
+		
 		if (stateLike.like === true) {
 			marker.update(markerId, liked+1, disliked)
 		}
@@ -74,7 +74,6 @@ function MapContainer(props){
 			marker.update(markerId, liked, disliked+1)
 		}
 	}
-
 
 	return (
 		<>

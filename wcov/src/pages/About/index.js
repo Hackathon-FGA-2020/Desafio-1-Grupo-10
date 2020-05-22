@@ -16,11 +16,16 @@ import Maria from '../../assets/participantes/Maria Claudia.svg'
 import Paulo from '../../assets/participantes/Paulo.svg'
 
 
+<<<<<<< HEAD
 function About (){ 
 
 
 
   return (
+=======
+function About (){
+ return (
+>>>>>>> bad7df04ae9fb9d1d58bec3743cd1022821ca3f8
   <>
     <Header/>
         

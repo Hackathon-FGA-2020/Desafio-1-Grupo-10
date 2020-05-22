@@ -98,3 +98,16 @@
     left: 0;
     right: 0;
 }
+
+.imgBackH{
+    position: relative;
+    display: block;
+    width: 449px;
+    height: 123px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}

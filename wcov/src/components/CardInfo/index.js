@@ -10,14 +10,6 @@ import ThumbDownOutlinedIcon from '@material-ui/icons/ThumbDownOutlined';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import './style.css'
 
-/*
-  function displayLikes(cardType){
-    if (cardType === "event" || cardType === "mascara" || cardType === "cesta" || cardType === "outro") {
-      return 0
-    }
-  }
-*/
-
 function CardInfo(props){
 
   function displayName(){
@@ -43,10 +35,21 @@ function CardInfo(props){
     }
   }
 
+  const [state, setState] = React.useState({
+    like: false,
+    dislike: false,
+  });
+
+  const handleChange = (event) => {
+    var submit = {...state, [event.target.name]: event.target.checked}
+    setState({ ...state, [event.target.name]: event.target.checked });
+    props.response(submit);
+  };
+
   function displayLikes(){
     if (props.icon === "event" || props.icon === "mascara" || props.icon === "cesta" || props.icon === "outro") {
-      return (
-        <FormControl component="fieldset">
+      return(
+        <FormControl component="fieldset" >
           <FormGroup aria-label="position" >
             <FormControlLabel
               control={
@@ -58,7 +61,9 @@ function CardInfo(props){
                   checkedIcon={<ThumbUpIcon />}
                 />
               }
+              disabled ={state.dislike}
               label={convertLikes()}
+              className="textCardInfo"
               labelPlacement="end"
             />
 
@@ -72,7 +77,9 @@ function CardInfo(props){
                   checkedIcon={<ThumbDownIcon />}
                 />
               }
+              disabled ={state.like}
               label={convertDislikes()}
+              className="textCardInfo"
               labelPlacement="end"
             />
           </FormGroup>
@@ -82,33 +89,30 @@ function CardInfo(props){
   }
 
   function convertLikes(){
-    if (props.likes === 1){
+    if ((props.likes === 1 && state.like === false) || (props.likes === 0 && state.like === true)){
       return `1 pessoa confirmou`
     }
     else{
-      return `${props.likes} pessoas confirmaram`
+      if (state.like === true) {
+        return `${props.likes+1} pessoas confirmaram`
+      } else {
+        return `${props.likes} pessoas confirmaram`
+      }
     }
   }
 
   function convertDislikes(){
-    if (props.likes === 1){
+    if ((props.dislikes === 1 && state.dislike === false) || (props.dislikes === 0 && state.dislike === true)){
       return `1 pessoa contestou`
     }
     else{
-      return `${props.dislikes} pessoas contestaram`
+      if (state.dislike === true) {
+        return `${props.dislikes+1} pessoas contestaram`
+      } else {
+        return `${props.dislikes} pessoas contestaram`
+      }
     }
   }
-
-  const [state, setState] = React.useState({
-    like: false,
-    dislike: false,
-  });
-
-  const handleChange = (event) => {
-    var submit = {...state, [event.target.name]: event.target.checked}
-    setState({ ...state, [event.target.name]: event.target.checked });
-    props.response(submit);
-  };
 
   return (
         <>
@@ -126,5 +130,6 @@ function CardInfo(props){
         </>
   )
 }
+
 
 export default CardInfo;
