@@ -67,6 +67,7 @@ function MapContainer(props){
 	}
 
 	function updateMarker(markerId, liked, disliked){
+		
 		if (stateLike.like === true) {
 			marker.update(markerId, liked+1, disliked)
 		}
@@ -74,7 +75,6 @@ function MapContainer(props){
 			marker.update(markerId, liked, disliked+1)
 		}
 	}
-
 
 	return (
 		<>

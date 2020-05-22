@@ -12,6 +12,7 @@ import mulher from '../../assets/casos/mulher.svg'
 
 import './style.css'
 
+
 var numeroDeCasos = 345678; 
 var porcentagemHomens = 54.8;
 var porcentagemMulheres = 45.2;
