@@ -79,10 +79,10 @@ Apenas a versão web está finalizada.
 ## Projetos Futuros
 
 * Finalização da versão mobile
-* Implementação do aplicativo
+* Implementação de um aplicativo responsível, 100% acessível para pessoas com deficiência
 * Sistema de autenticação de usuário
 * Possibilidade de fazer denúncias
-
+* Melhorar a acessibilidade
 
 ## Licença
 
