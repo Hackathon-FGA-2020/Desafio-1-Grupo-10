@@ -5,6 +5,8 @@ import Alerta from "../Alert"
 import MarkersService from '../../services/MarkersService'
 import './style.css'
 
+//#TODO quando marca dois eventos sem atualizar a pagina um substitui o outro
+
 function Form (props){
 	const previousCheckRef = React.useRef(props.mydummy)
 	const marker = new MarkersService()
@@ -50,11 +52,15 @@ function Form (props){
 				case 'mascara':
 					localStorage.setItem('@selectValue', "mascara");
 					break;
+				case 'cesta':
+					localStorage.setItem('@selectValue', "cesta");
+					break;
+				case 'outro':
+					localStorage.setItem('@selectValue', "outro");
+					break;
 				default:
 					localStorage.setItem('@selectValue', "event");
-
 			}
-
 		}
 		}
 	  }
@@ -149,8 +155,8 @@ function Form (props){
 				onChange={handleChange}
 			>
 				<MenuItem value={'mascara'}>Distribuição de máscaras</MenuItem>
-				<MenuItem value={20}>Twen</MenuItem>
-				<MenuItem value={30}>Thirty</MenuItem>
+				<MenuItem value={'cesta'}>Distribuição de cestas básicas</MenuItem>
+				<MenuItem value={'outro'}>Outro</MenuItem>
 			</Select>
 		  </FormControl>
       <div/>

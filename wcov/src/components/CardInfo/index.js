@@ -1,37 +1,34 @@
 import React from 'react'
 import { Divider } from '@material-ui/core'
+import List from '@material-ui/core/List';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import './style.css'
 
-//#TODO: Descrição ao invés de endereço no caso de defaultmarkers, incluir likes e dislikes
+//#TODO: incluir likes e dislikes
 
 function CardInfo ({cardType, titleCard, descriptionCard}){
 
   function DisplayName(titleCard){
     switch(titleCard) {
-      case 'pharm':
-        console.log("Farmácia")
-        return "Farmácia"
-      case 'hosp':
-        console.log("Hospital")
-        return "Hospital"
-      case 'upa':
-        console.log("UPA - Unidade de Pronto Atendimento")
-        return "UPA - Unidade de Pronto Atendimento"
       case 'mascara':
-        console.log("Distribuição de máscaras")
-        break;
+        return "Distribuição de máscaras"
+      case 'cesta':
+        return "Distribuição de cestas básicas"
+      case 'outro':
+        return "Outro"
       default:
-        console.log(titleCard)
+        return titleCard
   
     }
   }
 
   function DisplayDescription(cardType){
-    if (cardType === "event" || cardType === "mascara") {
-      return "Descrição"
+    if (cardType === "event" || cardType === "mascara" || cardType === "cesta" || cardType === "outro") {
+      return "Descrição: "
     }
     else {
-      return "Endereço"
+      return "Endereço: "
     }
   }
 
@@ -43,9 +40,10 @@ function CardInfo ({cardType, titleCard, descriptionCard}){
             </h1>
             <Divider />
             <p className="textCardInfo" >
-              <strong>{DisplayDescription(cardType)}  </strong>
+              <strong> {DisplayDescription(cardType)} </strong>
               {descriptionCard}
             </p>
+
           </div>
         </>
   )
