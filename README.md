@@ -31,7 +31,7 @@ A instalação do software pode ser feita através do botão de *"Clone or Downl
 # Clone este repositório
 git clone https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10.git
 
-# Vá ao repositório 'cd Desafio-1-Grupo-10'
+# Vá ao repositório 'Desafio-1-Grupo-10'
 cd Desafio-1-Grupo-10
 ```
 
