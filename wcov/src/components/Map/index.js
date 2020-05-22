@@ -19,7 +19,6 @@ function MapContainer(props){
 	const [dummy, setDummy] = React.useState()
 	const marker = new MarkersService()
 	
-
 	const [markers, setMarkers] = useState([{coords:[55,50]}])
 
 	useEffect(() => {
