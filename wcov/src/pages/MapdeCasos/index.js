@@ -1,8 +1,7 @@
 import React from 'react'
 
 import ProgressBar from 'react-bootstrap/ProgressBar'
-
-import get from '../../api/request'
+import CasosService from '../../services/CasosService'
 import Header from '../../components/Header'
 import ChartPie from '../../components/ChartPie'
 import ChartBar from '../../components/ChartBar'
@@ -13,18 +12,43 @@ import mulher from '../../assets/casos/mulher.svg'
 import './style.css'
 
 
-var numeroDeCasos = 345678; 
-var porcentagemHomens = 54.8;
-var porcentagemMulheres = 45.2;
+function getPercentages(casos) {
+	var homem=0
+	var mulher = 0
+	casos.forEach((caso) => {
+		(caso.sexo === 'Masculino') ? homem++ : mulher++
+	})
+	for(let caso in casos) {
+			}
+	homem /= (casos.length/100)
+	mulher /= (casos.length/100)
+	return {
+		mal: homem.toFixed(2), 
+		fem: mulher.toFixed(2)}
+}
 
 function Mapeamento (){
+	const casosMan = new CasosService()
+	const [casos, setCasos] = React.useState([])
+	const [percent, setPercent] = React.useState( {
+		mal: 0,
+		fem: 0})
+	
+	React.useEffect(() => {
+		async function fetchCasos() {
+			var dum
+			await casosMan.get('casos').then((response) =>{
+				setCasos(response)
+				dum = response
+			})
+			setPercent(getPercentages(dum))
+		}
+		fetchCasos()
+	},[])
 
   return (
     <>
       <Header/>
-      
-      
-
       <div className="containerCasos" >
 
             <div style={{ width: 400 }} >
@@ -37,7 +61,7 @@ function Mapeamento (){
 
           <div className="containerEvolucao" >
 
-          <ChartComposed />
+          <ChartComposed listaCasos={casos}/>
 
           </div>
 
@@ -49,8 +73,8 @@ function Mapeamento (){
             <div className="total" >
               
               <p class="chartPieTitle"> Casos</p>
-              <p class="totalDeCasos"> {numeroDeCasos}</p>
-              <ChartPie />
+              <p class="totalDeCasos"> {casos.length}</p>
+              <ChartPie listaCasos={casos}/>
               
             </div>
 
@@ -59,7 +83,7 @@ function Mapeamento (){
               <div className="conteinerHuman">
                 
                 <img src={homem} alt="Homem" />
-                <p class="totalDeCasos"> {porcentagemHomens}%</p>
+                <p class="totalDeCasos"> {percent.mal}%</p>
 
               </div>
 
@@ -68,7 +92,7 @@ function Mapeamento (){
                   <img src={mulher} alt="Mulher" /> 
                 </div>                  
                 
-                <p class="totalDeCasos"> {porcentagemMulheres}%</p>
+                <p class="totalDeCasos"> {percent.fem}%</p>
 
               </div>
 
@@ -77,7 +101,7 @@ function Mapeamento (){
             
             <div className="trackCasos" >
 
-            <ChartBar />
+            <ChartBar listaCasos={casos}/>
 
             </div>
 

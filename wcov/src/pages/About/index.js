@@ -3,10 +3,7 @@ import Header from '../../components/Header'
 import './style.css'
 
 function About (){
-
-
-
-  return (
+ return (
   <>
     <Header/>
       <div className = "containerAbout">
