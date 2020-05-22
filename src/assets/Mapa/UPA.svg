@@ -1,0 +1,24 @@
+<svg id="Agrupar_1" data-name="Agrupar 1" xmlns="http://www.w3.org/2000/svg" width="677" height="235" viewBox="0 0 677 235">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 45.833px;
+        fill: #00e676;
+        font-family: Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #e8e16a;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #6879f9;
+      }
+    </style>
+  </defs>
+  <text id="UPA" class="cls-1" transform="translate(-23.653 231.403) scale(7.517 7.016)">UPA</text>
+  <path id="Retângulo_1" data-name="Retângulo 1" class="cls-2" d="M707.509,380L771,446.509,707.491,513,644,446.491Z" transform="translate(-158 -334)"/>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-3" cx="550" cy="113" r="41"/>
+</svg>

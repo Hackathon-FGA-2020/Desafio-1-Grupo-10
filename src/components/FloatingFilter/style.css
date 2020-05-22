@@ -1,0 +1,75 @@
+.containerFilter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    bottom: 40px;
+    left: 40px;
+    width: 222px;
+    height: 258px;
+    z-index: 2;
+    padding: 18px;
+
+    opacity: 0.75;
+    background: #FFFFFF;
+    border-radius: 15px;
+
+}
+
+.containerFilter:hover{
+    opacity: 1;
+}
+
+.titleFilter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #E91E63;
+}
+
+.textFilter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #393939;
+}
+
+.containerCheckboxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerImg{
+    justify-content: right;
+}
+
+.iconFarmacia{
+    justify-content: right;
+    max-width: 57px;
+    max-height: 18px;
+}
+
+.iconHospital{
+    justify-content: right;
+    max-width: 35px;
+    max-height: 27px;
+}
+
+.iconUPA{
+    justify-content: right;
+    max-width: 53px;
+    max-height: 19px;
+}
+
+.iconEventos{
+    justify-content: end;
+    max-width: 30px;
+    max-height: 30px;
+}

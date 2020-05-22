@@ -1,0 +1,61 @@
+.containerNotFound{
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+
+}
+
+.containerNotFound > h1 {
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 117px;
+  color: rgba(233, 30, 99, 0.6);
+
+}
+
+.Dino{
+  width: 50vh;
+  position:absolute;
+  right: 25vw;
+  bottom: 0px;
+  z-index: 1;
+}
+.Capim{
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
+  left: 0px;
+}
+.meteoro{
+  position: absolute;
+  left: 10vw;
+  top: 15vh;
+}
+
+.sun{
+  position: absolute;
+  right:15vw;
+  top: 25vh;
+}
+
+.ErrorText{
+
+  position: absolute;
+  left: 16vw;
+  top: 39vh;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+
+  color: #F278A1;
+
+  transform: rotate(30deg);
+}

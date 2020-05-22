@@ -1,0 +1,175 @@
+.containerCuidados{
+  
+  display: flex;
+  margin: 40px auto ; 
+  max-width: 1200px;
+  background-color: #FFFDFD;
+  border-radius: 15px;
+  padding: 20px 40px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+
+}
+
+.containerCuidados{
+  border-bottom: 4px solid #555151;
+}
+
+.TitleCuidados{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  color: #E91E63;
+}
+
+.initDescriptionCuidados{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #555151;
+}
+
+.descriptionCuidados{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #555151;
+  width: 400px;
+  margin: 0 40px;
+}
+
+.containerCuidados > h1 {
+  margin-bottom: 100px;
+}
+
+.containerContentCuidados{
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.containerContentCuidados  img {
+  height: 400px;
+  width: 500px;
+}
+
+.containerContentCuidados + .containerContentCuidados{
+
+  margin-bottom: 80px;
+
+}
+
+
+.listCuidados{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #555151;
+  margin-left: 20px;
+  list-style: none;
+
+}
+
+.listCuidados > li::before{
+  content: '•';
+  font-size: 25px;
+  margin-right: 10px;
+  color: #E91E63;
+}
+
+.atentionCuidados{
+  width: 580px;
+  height: 220px;
+  
+  background: #E91E63;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.atentionCuidados > p > strong {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #FFFF00;
+}
+
+.atentionCuidados > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.questionsCuidados{
+  min-width: 480px;
+  min-height: 250px;
+  background-color: #E91E63;
+  padding: 25px 17px;
+  border-radius: 15px;
+  font-family: Roboto;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+
+
+}
+
+.answersCuidados{
+
+  height:50px ;
+
+  background-color:#F7D63F ;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+
+  color: #000000;
+
+}
+

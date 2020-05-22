@@ -1,0 +1,117 @@
+.containerAAbout{
+    display: block;
+    margin: 40px auto ;
+    max-width: 1200px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerTextAbout{
+    display: flex;
+    margin: 40px auto ;
+    max-width: 1200px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 60px 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    
+}
+
+.containerParticipantes{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 100;
+
+}
+
+.titleAAbout{
+    position: relative;
+    z-index: 1;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+    margin-bottom: 10px ;
+}
+
+.textAAbout{
+    position: relative;
+    z-index: 1;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #595959;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.textAAboutParticipantes{
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.imgBack{
+    position: relative;
+    display: block;
+    width: 112px;
+    height: 112px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgBackT{
+    position: absolute;
+    display: flex;
+    width: 700px;
+    height: 700px;
+    align-content: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.imgBackH{
+    position: relative;
+    display: block;
+    width: 35%;
+    height: 35%;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}

@@ -1,0 +1,66 @@
+.containerHelp{
+    
+    display: flex;
+    margin: 40px auto ;
+    max-width: 1200px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 60px 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titleHelp{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #E91E63;
+    margin-bottom: 30px ;
+}
+
+.textHelp{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #555151;
+    margin-bottom: 30px;
+}
+
+.containerButtonHelp{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonHelp{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 310px;
+    height: 145px;
+    background: #E91E63;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+
+}
+
+.buttonHelp:hover{
+    background: #FAFAFA;
+    color: #E91E63;
+}

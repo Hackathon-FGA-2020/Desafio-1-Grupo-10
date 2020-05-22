@@ -1,0 +1,66 @@
+.containerAten{
+    
+    display: flex;
+    margin: 40px auto; 
+    max-width: 1200px;
+    background-color: #FFFDFD;
+    border-radius: 15px;
+    padding: 40px 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    
+}
+
+.titleAten{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    color: #E91E63;
+}
+
+.gradeAten{
+    justify-content: space-between;
+}
+
+.textAten{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    color: #555151;
+    margin-top: 26px;
+    margin-bottom: 46px;
+}
+
+.buttonAten{
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 7px;
+    margin: 5px 0;
+    
+    background: #E91E63;
+    border-radius: 8px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    display:  flex;
+    color: #FAFAFA;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+}
