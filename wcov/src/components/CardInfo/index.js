@@ -35,10 +35,21 @@ function CardInfo(props){
     }
   }
 
+  const [state, setState] = React.useState({
+    like: false,
+    dislike: false,
+  });
+
+  const handleChange = (event) => {
+    var submit = {...state, [event.target.name]: event.target.checked}
+    setState({ ...state, [event.target.name]: event.target.checked });
+    props.response(submit);
+  };
+
   function displayLikes(){
     if (props.icon === "event" || props.icon === "mascara" || props.icon === "cesta" || props.icon === "outro") {
       return(
-        <FormControl component="fieldset">
+        <FormControl component="fieldset" >
           <FormGroup aria-label="position" >
             <FormControlLabel
               control={
@@ -50,7 +61,9 @@ function CardInfo(props){
                   checkedIcon={<ThumbUpIcon />}
                 />
               }
+              disabled ={state.dislike}
               label={convertLikes()}
+              className="textCardInfo"
               labelPlacement="end"
             />
 
@@ -64,7 +77,9 @@ function CardInfo(props){
                   checkedIcon={<ThumbDownIcon />}
                 />
               }
+              disabled ={state.like}
               label={convertDislikes()}
+              className="textCardInfo"
               labelPlacement="end"
             />
           </FormGroup>
@@ -99,17 +114,6 @@ function CardInfo(props){
     }
   }
 
-  const [state, setState] = React.useState({
-    like: false,
-    dislike: false,
-  });
-
-  const handleChange = (event) => {
-    var submit = {...state, [event.target.name]: event.target.checked}
-    setState({ ...state, [event.target.name]: event.target.checked });
-    props.response(submit);
-  };
-
   return (
         <>
           <div >
@@ -122,7 +126,6 @@ function CardInfo(props){
               {props.description}
             </p>
             {displayLikes()}
-            
           </div>
         </>
   )
