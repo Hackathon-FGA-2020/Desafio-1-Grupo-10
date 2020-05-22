@@ -20,7 +20,6 @@ function Mapeamento (){
 
   return (
     <>
-    {console.log(get())}
       <Header/>
       
       

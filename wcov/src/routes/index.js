@@ -22,7 +22,6 @@ export default function Routes(){
       <Route path='/atendimentos' exact strict component ={Atendimentos} />
       <Route path='/atendimentos/:id' exact strict component = {RAs} />
       <Route path='/acessibilidade' exact strict component = {Acessibilidade} />
-
     </Switch>
   )
 }
