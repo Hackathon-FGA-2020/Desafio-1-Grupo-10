@@ -1,7 +1,7 @@
 .containerAten{
     
     display: flex;
-    margin: 40px; 
+    margin: 40px auto; 
     max-width: 1200px;
     background-color: #FFFDFD;
     border-radius: 15px;

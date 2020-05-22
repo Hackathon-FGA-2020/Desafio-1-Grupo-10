@@ -21,12 +21,13 @@ function Cuidados() {
       <Header />
       <div className="containerCuidados" >
 
-        <h1 className="TitleCuidados" >Transmissão</h1>
+      <h1 className="TitleCuidados" >Cuidados</h1>
 
-        
         <div className="containerContentCuidados" >
-
           <div>
+
+            <h1 className="TitleCuidados" style={{fontSize:38, marginBottom:15}} >Transmissão</h1>
+            
 
             <p className="initDescriptionCuidados" style={{marginBottom: 25}} >
               A transmissão costuma ocorrer através do contato das mucosas com o ar contaminado com secreções e/ou por contato pessoal, como:

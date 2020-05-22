@@ -64,9 +64,6 @@ function MapContainer(props){
 		}
 	}
 
-	function deleteMarker(markerId){
-		marker.delete(markerId)
-	}
 
 	function updateMarker(markerId, liked, disliked){
 		

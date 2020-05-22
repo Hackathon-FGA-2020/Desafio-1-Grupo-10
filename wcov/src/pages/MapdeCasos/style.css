@@ -6,7 +6,8 @@
 .containerRegião{
   flex:1.5;
   text-align: center;
-  margin: 10px 5px ;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .containerRegião > h1{
@@ -23,7 +24,7 @@
   align-items: center;
   flex:1;
   text-align: center;
-  margin: 20px 15px ;
+  margin: 20px 15px 0px 15px ;
 }
 
 .containerTotais > h1 > strong{
@@ -31,30 +32,46 @@
 }
 
 .containerTable{
-  height: 490px;
+  height: 600px;
   overflow: auto;
 
 }
 
 .containerChartPie{
-  margin-top:10px ;
+  margin-top:25px ;
+  margin-bottom: 25px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top:25px;
+  padding-bottom: 25px;
+  
 }
 .containerChartBar{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px 0;
 
 }
 
 
 .containerChartBar > img {
-  width: 128px;
-}
-.containerChartBar > img + img {
-  width: 114px;
+  height: 100px;
+  margin: 0px 35px;
 }
 
+.containerChartBar > hr {
+  width: 0px;
+  height: 125px;
+  border: 2px solid #DBDBDB;
+  margin: 0px 35px;
+}
+
+.containerTotais > hr {
+  width: 500px;
+  height: 0px;
+  border: 2px solid #DBDBDB;
+  margin: 15px 35px;
+  
+}

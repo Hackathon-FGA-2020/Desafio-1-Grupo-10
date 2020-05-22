@@ -10,7 +10,7 @@ function Ajuda(){
 
   return (
   <>
-    <Header/>
+    <Header name="Ajuda"/>
 
     <div className="containerHelp" >
       <div >

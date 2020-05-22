@@ -21,12 +21,12 @@ import InfoIcon from '@material-ui/icons/Info';
 import MapIcon from '@material-ui/icons/Map';
 import HealingIcon from '@material-ui/icons/Healing';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-import MoodBadIcon from '@material-ui/icons/MoodBad';
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 import HomeIcon from '@material-ui/icons/Home';
 
 import {useStyles} from './styles'
 
-export default function Header({children}) {
+export default function Header({children, name}) {
 
   const classes = useStyles();
   const theme = useTheme();
@@ -63,7 +63,7 @@ export default function Header({children}) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Menu
+            Menu 
           </Typography>
         </Toolbar>
       </AppBar>
@@ -110,14 +110,14 @@ export default function Header({children}) {
         <Link className={classes.linkText} to="/atendimentos" >
           <ListItem button >
               <ListItemIcon><LocalHospitalIcon /></ListItemIcon>
-              <ListItemText primary="Atendimentos" />
+              <ListItemText primary="Locais de Atendimento" />
           </ListItem>
         </Link>
 
         <Link className={classes.linkText} to="/ajuda">
           <ListItem button >
-                <ListItemIcon><MoodBadIcon /></ListItemIcon>
-                <ListItemText primary="Procurando ajuda" />
+                <ListItemIcon><DirectionsCarIcon /></ListItemIcon>
+                <ListItemText primary="Testes via Drive-Thru" />
           </ListItem>
         </Link>
 

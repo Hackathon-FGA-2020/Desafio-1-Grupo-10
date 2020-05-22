@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="CodInfo Logo" src="https://github.com/MariaClaudia1328/Imagens/blob/master/logo_codinfo.png" />
+    <img style="border-radius=15px" alt="CodInfo Logo" src="https://github.com/MariaClaudia1328/Imagens/blob/master/logo_codinfo.png" />
     <br> CodInfo <br />
 </h1>
 
@@ -11,9 +11,9 @@
 
 O projeto CodInfo é fruto da participação do Hackathon promovido pela Faculdade do Gama - UnB cujo objetivo busca desenvolver soluções, sejam envolvendo tecnologias, aplicações ou jogos, para problemas relacionados ao COVID-19. Diante disso, o projeto consiste em uma aplicação web em que não apenas informa, como também permite que o usuário relate eventos que acontecem na sua região. 
 
-A informação se dá por meio do mapeamento de casos, atualizado diariamente, em que é possível ver a quantidade de casos por região administrativa, o total de casos do Distrito Federal, além da quantidade de óbitos, de casos recuperados, de casos graves, de casos moderados e de casos leves. Também é possível verificar a faixa etária dos infectados, a porcentagem de homens e mulheres diagnosticados com a doença e a quantidade de casos por meio de gráficos. 
+A informação se dá por meio do mapeamento de casos, atualizado diariamente, na qual é possível ver a quantidade de casos por região administrativa, o total de casos do Distrito Federal, além da quantidade de óbitos, de casos recuperados, de casos graves, moderados e leves. Também é possível verificar a faixa etária dos infectados, a porcentagem de homens e mulheres diagnosticados com a doença e a quantidade de casos por meio de gráficos. 
 
-Além disso, o projeto informa acerca dos cuidados para evitar a transmissão, como se prevenir e quais são os sintomas, além de orientar sobre o que fazer em caso de suspeita e informar os locais de todas as Unidades Básicas de Saúde (UBS) e Unidades de Pronto Atendimento (UPA).
+Além disso, o projeto informa acerca dos cuidados para evitar a transmissão, como se prevenir e quais são os sintomas, além de orientar sobre o que fazer em caso de suspeita através das plataformas de agendamento de teste via Drive-Thru e informar os locais de todas as Unidades Básicas de Saúde (UBS) e Unidades de Pronto Atendimento (UPA), tanto em texto quanto a localização no mapa.
 
 ## Pré-requisitos
 
