@@ -9,16 +9,25 @@
 
 }
 
+
 .containerMapa{
 
-  background-color: red;
+  background-color: #FFFFFF;
   border-radius: 15px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 2; 
   grid-row-start: 1;
   grid-row-end: 2;
   
+}
+
+.containerMapa > img{
+
+  width: 75%;
+
 }
 
 .containerEvolucao{
@@ -36,6 +45,21 @@
   
 }
 
+.containerHuman{
+
+
+}
+
+.containerImagemMulher > img{
+
+  width: 75%;
+
+}
+
+.containerHomemEMulher {
+    display: block;
+    justify-content: space-around;
+}
 
 .containerDados{
 
@@ -55,7 +79,39 @@
 
 }
 
+.chartPieTitle{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 30px ;
+  justify-content: center
+
+}
+
+
+.totalDeCasos{
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  color: #455A64;
+  margin-bottom: 5px ;
+  justify-content: center
+
+}
+
 .total{
+
 
 }
 

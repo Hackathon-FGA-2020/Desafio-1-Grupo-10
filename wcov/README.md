@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="CodInfo Logo" src="https://github.com/MariaClaudia1328/Imagens/blob/master/logo_codinfo.png" />
+    <br> CodInfo <br />
+</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="#pré-requisitos">Pré-requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#execução">Execução</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-In the project directory, you can run:
+O projeto CodInfo é fruto da participação do Hackathon promovido pela Faculdade do Gama - UnB cujo objetivo busca desenvolver soluções, sejam envolvendo tecnologias, aplicações ou jogos, para problemas relacionados ao COVID-19. Diante disso, o projeto consiste em uma aplicação web em que não apenas informa, como também permite que o usuário relate eventos que acontecem na sua região. 
 
-### `npm start`
+A informação se dá por meio do mapeamento de casos, atualizado diariamente, em que é possível ver a quantidade de casos por região administrativa, o total de casos do Distrito Federal, além da quantidade de óbitos, de casos recuperados, de casos graves, de casos moderados e de casos leves. Também é possível verificar a faixa etária dos infectados, a porcentagem de homens e mulheres diagnosticados com a doença e a quantidade de casos por meio de gráficos. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Além disso, o projeto informa acerca dos cuidados para evitar a transmissão, como se prevenir e quais são os sintomas, além de orientar sobre o que fazer em caso de suspeita e informar os locais de todas as Unidades Básicas de Saúde (UBS) e Unidades de Pronto Atendimento (UPA).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+Para executar, o software utiliza o framework de JavaScript, NodeJS, além do gerenciador de pacotes npm. Caso não tenha essas ferramentas instaladas em seu computador, basta seguir as seguintes instruções.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Vá ao site <https://nodejs.org/en/download/> e instale a versão 12.6.3 de NodeJS adequada para o sistema operacional que você estiver utilizando
 
-### `npm run build`
+2. O npm é instalado juntamente com o NodeJS. Para verificar sua instalação basta abrir a ferramenta de linha de comando do seu sistema operacional, por exemplo o cmd do Windows ou o terminal do Linux, e digitar npm. Caso o npm esteja devidamente instalado, uma lista de comandos irá aparecer. Caso contrário, é possível instalar o npm por meio desse [link](https://www.npmjs.com/get-npm), a versão mínima necessária é a 6.14.4 .
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+A instalação do software pode ser feita através do botão de *"Clone or Download"* presente no [diretório do programa](https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10/tree/dev) ou utilizando git - um guia rápido para a instalação e uso do git pode ser encontrado em <https://rogerdudler.github.io/git-guide/index.pt_BR.html> . Por meio do git, a instalação pode ser feita seguindo os passos a seguir.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone este repositório
+git clone https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10.git
 
-### `npm run eject`
+# Vá ao repositório 'wcov'
+cd wcov
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Após chegar no repositório, a execução do programa pode ser efetuada.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Execução
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Feito o procedimento de instalação, abra a ferramenta de linha de comando do seu sistema operacional e utilize os seguinte comandos, lembrando que eles devem ser efetuados no repositório dado pela última instrução de instalação.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Para instalar as dependências necessárias
+npm install
+```
+```bash
+# Para iniciar o programa
+npm start
+```
 
-## Learn More
+Depois de executar o último comando, a execução do programa deve acontecer semelhante ao gif abaixo. <!-- inserir gif -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tecnologias usadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [NodeJS](https://nodejs.org/en/) 
+* [npm](https://www.npmjs.com/) 
+* [Material Ui](https://material-ui.com/)
+* [ReactJS](https://pt-br.reactjs.org/)
+* [Firebase](https://firebase.google.com/?hl=pt-br)
+* [LeafletJS](https://leafletjs.com/)
+* [RechartsJS](https://recharts.org/)
 
-### Code Splitting
+## Autores
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* **André Dornelas** - [adornelas](https://github.com/adornelas)
+* **Bianca Boueri** - [BiancaBoueri](https://github.com/BiancaBoueri) 
+* **Caio** - [chaioaaD](https://github.com/chaioaaD)
+* **Evelyn Soares** - [evelynsoares](https://github.com/evelynsoares)
+* **Gabriel Baliza** - [GabrielBaliza](https://github.com/GabrielBaliza)
+* **Gabriel Bismarck** - [gabrielbismarck](https://github.com/gabrielbismarck)
+* **Gabriel Delolmo** - [delanoerhardt](https://github.com/delanoerhardt)
+* **Maria Claudia** - [MariaClaudia1328](https://github.com/MariaClaudia1328)
+* **Paulo Henrique** - [paulohenriquerosa](https://github.com/paulohenriquerosa)
 
-### Analyzing the Bundle Size
+## Licença
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+A licença do projeto pode ser encontrada neste [link](https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10/blob/master/LICENSE).

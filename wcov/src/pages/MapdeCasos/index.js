@@ -1,14 +1,22 @@
 import React from 'react'
+
+import ProgressBar from 'react-bootstrap/ProgressBar'
+
 import get from '../../api/request'
 import Header from '../../components/Header'
 import ChartPie from '../../components/ChartPie'
-import CharBar from '../../components/ChartBar'
+import ChartBar from '../../components/ChartBar'
+import ChartComposed from '../../components/ChartComposed'
+import homem from '../../assets/casos/homem.svg'
+import mulher from '../../assets/casos/mulher.svg'
 
 import './style.css'
 
-function Mapeamento (){
+var numeroDeCasos = 345678; 
+var porcentagemHomens = 54.8;
+var porcentagemMulheres = 45.2;
 
- 
+function Mapeamento (){
 
   return (
     <>
@@ -19,32 +27,57 @@ function Mapeamento (){
 
       <div className="containerCasos" >
 
-
-          <div className="containerMapa" >
-
+            <div style={{ width: 400 }} >
+              
+             <ProgressBar now={50} />
+          
           </div>
 
 
 
           <div className="containerEvolucao" >
 
-          <CharBar />
+          <ChartComposed />
 
           </div>
 
         
         
         <div className="containerDados" >
+            
 
             <div className="total" >
-
+              
+              <p class="chartPieTitle"> Casos</p>
+              <p class="totalDeCasos"> {numeroDeCasos}</p>
               <ChartPie />
+              
+            </div>
+
+            <div className="conteinerHomemEMulher">
+
+              <div className="conteinerHuman">
+                
+                <img src={homem} alt="Homem" />
+                <p class="totalDeCasos"> {porcentagemHomens}%</p>
+
+              </div>
+
+              <div className="conteinerHuman">
+                <div class="conteinerImagemMulher">
+                  <img src={mulher} alt="Mulher" /> 
+                </div>                  
+                
+                <p class="totalDeCasos"> {porcentagemMulheres}%</p>
+
+              </div>
 
             </div>
+          
             
             <div className="trackCasos" >
 
-              <ChartPie />
+            <ChartBar />
 
             </div>
 
@@ -58,3 +91,5 @@ function Mapeamento (){
   }
 
 export default Mapeamento
+
+
