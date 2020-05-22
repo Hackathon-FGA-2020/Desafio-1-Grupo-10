@@ -54,6 +54,10 @@ A aplicação pode ser visualizada em: <https://wcov-70df7.web.app/>
 
 Apenas a versão web está finalizada.
 
+<img style="border-radius=15px" alt="Uso" src="https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10/blob/master/Gifs/1.gif" />
+<img style="border-radius=15px" alt="Uso" src="https://github.com/Hackathon-FGA-2020/Desafio-1-Grupo-10/blob/master/Gifs/2.gif" />
+
+
 ## Tecnologias usadas
 
 * [NodeJS](https://nodejs.org/en/) 
